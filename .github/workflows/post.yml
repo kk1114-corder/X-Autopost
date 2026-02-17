@@ -1,5 +1,8 @@
 name: Auto Post to X
 
+permissions:
+  contents: write
+
 on:
   schedule:
     # JST 07:00 = UTC 22:00 (previous day)
