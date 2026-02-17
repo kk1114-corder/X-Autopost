@@ -1,0 +1,125 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "type": "quiz",
+      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. 「PDCA」の「C」が意味するものはどれ？\n\nA) Control\nB) Check\nC) Create\nD) Change\n\n正解は夕方に発表します！\n\n#ITパスポート #朝活 #IT資格",
+      "posted": true,
+      "postedAt": "2026-02-17T14:16:09.376Z"
+    },
+    {
+      "id": 2,
+      "type": "quiz",
+      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. 企業の情報セキュリティ対策で「機密性」「完全性」と合わせて重要とされるものは？\n\nA) 信頼性\nB) 可用性\nC) 効率性\nD) 保守性\n\n正解は夕方に発表！\n\n#ITパスポート #情報セキュリティ",
+      "posted": false
+    },
+    {
+      "id": 3,
+      "type": "quiz",
+      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. プロジェクト管理手法「WBS」は何の略？\n\nA) Web Based System\nB) Work Breakdown Structure\nC) Wide Band Service\nD) Work Base Schedule\n\n正解は夕方に！\n\n#ITパスポート #プロジェクト管理",
+      "posted": false
+    },
+    {
+      "id": 4,
+      "type": "quiz",
+      "content": "☀️ おはよう！\n\n【基本情報 朝の一問】\n\nQ. OSI参照モデルで「トランスポート層」は第何層？\n\nA) 第3層\nB) 第4層\nC) 第5層\nD) 第6層\n\n#基本情報技術者 #ネットワーク #朝活",
+      "posted": false
+    },
+    {
+      "id": 5,
+      "type": "quiz",
+      "content": "☀️ おはよう！\n\n【ITパスポート 朝の一問】\n\nQ. 「SaaS」の正式名称は？\n\nA) System as a Service\nB) Software as a Service\nC) Server as a Service\nD) Storage as a Service\n\n#ITパスポート #クラウド #IT資格勉強",
+      "posted": false
+    },
+    {
+      "id": 6,
+      "type": "meme",
+      "content": "【IT勉強あるある】\n\n「よし、カタカナ用語覚えるぞ💪」\n\nアジャイル、スクラム、カンバン、\nリファクタリング、デプロイ、\nマイグレーション、インテグレーション...\n\n全部カタカナやないかい！🫠\n\n#IT勉強あるある #エンジニア",
+      "posted": false
+    },
+    {
+      "id": 7,
+      "type": "meme",
+      "content": "【IT勉強あるある】\n\n参考書「この章は簡単です😊」\n\n→ 全然簡単じゃない\n\n参考書「ここは少し難しいです🤔」\n\n→ 宇宙語\n\n#IT資格 #ITパスポート #勉強あるある",
+      "posted": false
+    },
+    {
+      "id": 8,
+      "type": "meme",
+      "content": "【エンジニアあるある】\n\n上司「このシステム、簡単に作れる？」\n\n僕「（簡単とは...🤔）」\n\n定義を確認したいエンジニアの性(さが)\n\n#エンジニアあるある #IT業界",
+      "posted": false
+    },
+    {
+      "id": 9,
+      "type": "meme",
+      "content": "IT資格の勉強って\n\n「わかった！」→ 過去問解く → 「わかってなかった...」\n\nの無限ループなんよな😇\n\nでもそれが一番力つく💪\n\n#ITパスポート #基本情報 #勉強垢さんと繋がりたい",
+      "posted": false
+    },
+    {
+      "id": 10,
+      "type": "meme",
+      "content": "朝活3日目 ☀️\n\n今日も6時起きでITパスポートの勉強📖\n\n朝の30分って、夜の2時間くらいの集中力ある気がする\n\n一緒に頑張る人いいね押してください🙌\n\n#朝活 #IT資格 #勉強垢",
+      "posted": false
+    },
+    {
+      "id": 11,
+      "type": "tips",
+      "content": "【保存推奨】ITパスポート頻出用語5選\n\n1️⃣ SLA → サービスの品質保証\n2️⃣ BCP → 事業継続計画\n3️⃣ RPA → 業務の自動化\n4️⃣ IoT → モノのインターネット\n5️⃣ DX → デジタル変革\n\nこの5つは毎回出ます。確実に押さえましょう✍️\n\n#ITパスポート #IT用語",
+      "posted": false
+    },
+    {
+      "id": 12,
+      "type": "tips",
+      "content": "【1ヶ月でITパスポート合格ロードマップ】\n\n📅 Week1: テキスト1周（理解7割でOK）\n📅 Week2: 過去問3回分\n📅 Week3: 苦手分野を集中復習\n📅 Week4: 過去問5回分 + 模擬試験\n\n合格ライン: 1000点中600点\n意外といける！💪\n\n#ITパスポート #勉強法",
+      "posted": false
+    },
+    {
+      "id": 13,
+      "type": "tips",
+      "content": "【知ってた？】\n\nIT業界で最も使われる略語\n\n🔹 API = Application Programming Interface\n→ ソフト同士をつなぐ \"窓口\"\n\n例: 天気アプリが気象庁のデータを取得する時、APIを通じてやり取りしてます\n\n身近に感じると覚えやすい！\n\n#IT用語 #プログラミング初心者",
+      "posted": false
+    },
+    {
+      "id": 14,
+      "type": "tips",
+      "content": "【SQLの基本】これだけ覚えて！\n\n🔹 SELECT → データを取得\n🔹 INSERT → データを追加\n🔹 UPDATE → データを更新\n🔹 DELETE → データを削除\n\nこの4つが基本中の基本。\n「CRUD」と呼ばれてます📝\n\n#基本情報技術者 #SQL #データベース",
+      "posted": false
+    },
+    {
+      "id": 15,
+      "type": "tips",
+      "content": "昨日のクイズの答え💡\n\n「PDCA」の「C」= Check（評価）\n\nPlan(計画)→Do(実行)→Check(評価)→Act(改善)\n\nIT業界だけでなく、あらゆるビジネスで使われる超基本フレームワークです📊\n\n#ITパスポート #PDCA #ビジネス知識",
+      "posted": false
+    },
+    {
+      "id": 16,
+      "type": "promo",
+      "content": "IT業界に転職を考えている方へ 💼\n\nまずは自分の「市場価値」を知ることが大事です。\n\n✅ 年収診断ができる\n✅ 未経験OKの求人も多数\n✅ 登録は3分で完了\n\nITパスポートを取得してから登録すると、選択肢がグッと広がります📈\n\n#IT転職 #未経験エンジニア",
+      "posted": false
+    },
+    {
+      "id": 17,
+      "type": "promo",
+      "content": "📚 IT資格の勉強、独学だと不安な人へ\n\nUdemyのIT講座、セール時は1,500円〜で受けられます\n\n特にオススメ👇\n・ITパスポート速習コース\n・基本情報午後対策\n・ネットワーク入門\n\n動画で学ぶと理解速度が全然違う🎬\n\n#Udemy #IT学習 #ITパスポート",
+      "posted": false
+    },
+    {
+      "id": 18,
+      "type": "promo",
+      "content": "【無料で使えるIT学習サイト3選】\n\n1️⃣ Progate → プログラミング入門\n2️⃣ paizaラーニング → 動画で学べる\n3️⃣ ITパスポート過去問道場 → 過去問やり放題\n\n全部無料で始められます💡\nまずは触ってみることが大事！\n\n#IT学習 #プログラミング #無料",
+      "posted": false
+    },
+    {
+      "id": 19,
+      "type": "promo",
+      "content": "エンジニアのスキルアップに 📖\n\n技術書って高いけど、Kindle Unlimitedなら月980円で読み放題の技術書もあります\n\n特にIT資格系のテキストは充実してる印象 📚\n\n30日間無料体験もあるので、試験前だけ使うのもアリ👍\n\n#技術書 #IT資格 #KindleUnlimited",
+      "posted": false
+    },
+    {
+      "id": 20,
+      "type": "promo",
+      "content": "IT未経験から転職を目指す方へ 🚀\n\n最近は「ITパスポート + 基本情報」の2つを持ってると、書類通過率がかなり上がるそうです\n\n資格を取る → エージェントに登録 → 面接対策\n\nこの順番が最短ルートです💡\n\n#IT転職 #キャリアチェンジ #資格取得",
+      "posted": false
+    }
+  ]
+}

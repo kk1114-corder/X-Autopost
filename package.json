@@ -1,0 +1,22 @@
+{
+    "name": "sns-auto-poster",
+    "version": "1.0.0",
+    "description": "X (Twitter) auto-posting bot for IT study content",
+    "type": "module",
+    "scripts": {
+        "post": "tsx src/post.ts",
+        "post:quiz": "POST_TYPE=quiz tsx src/post.ts",
+        "post:meme": "POST_TYPE=meme tsx src/post.ts",
+        "post:tips": "POST_TYPE=tips tsx src/post.ts",
+        "post:promo": "POST_TYPE=promo tsx src/post.ts",
+        "test": "tsx src/post.ts --dry-run"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "twitter-api-v2": "^1.18.2"
+    },
+    "devDependencies": {
+        "tsx": "^4.19.3",
+        "typescript": "^5.7.3"
+    }
+}
