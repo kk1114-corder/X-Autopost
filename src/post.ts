@@ -130,7 +130,18 @@ async function main(): Promise<void> {
         savePosts(data);
         console.log(`💾 Post #${post.id} marked as posted.`);
     } catch (error: unknown) {
-        const err = error as { code?: number; data?: unknown; message?: string };
+        const err = error as { code?: number; data?: { detail?: string; title?: string }; message?: string };
+        const detail = err.data?.detail || '';
+
+        // Handle duplicate content - mark as posted and continue
+        if (err.code === 403 && detail.includes('duplicate')) {
+            console.log(`⚠️ Post #${post.id} was already posted (duplicate content). Marking as posted.`);
+            markAsPosted(data, post.id);
+            savePosts(data);
+            console.log(`💾 Post #${post.id} marked as posted.`);
+            return;
+        }
+
         console.error(`❌ Failed to post tweet:`);
         console.error(`   Code: ${err.code}`);
         console.error(`   Data:`, JSON.stringify(err.data, null, 2));
