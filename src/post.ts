@@ -13,8 +13,9 @@ const __dirname = dirname(__filename);
 // --- Types ---
 interface Post {
     id: number;
-    type: 'quiz' | 'meme' | 'tips' | 'promo';
+    type: 'morning' | 'lunch' | 'evening' | 'night';
     content: string;
+    reply?: string;
     posted: boolean;
     postedAt?: string;
 }
@@ -48,7 +49,7 @@ function createClient(): TwitterApi {
 function getPostType(): Post['type'] {
     // Allow override via env
     const override = process.env.POST_TYPE as Post['type'] | undefined;
-    if (override && ['quiz', 'meme', 'tips', 'promo'].includes(override)) {
+    if (override && ['morning', 'lunch', 'evening', 'night'].includes(override)) {
         return override;
     }
 
@@ -56,10 +57,10 @@ function getPostType(): Post['type'] {
     const now = new Date();
     const jstHour = (now.getUTCHours() + 9) % 24;
 
-    if (jstHour >= 5 && jstHour < 10) return 'quiz';     // 07:00 JST
-    if (jstHour >= 10 && jstHour < 15) return 'meme';     // 12:00 JST
-    if (jstHour >= 15 && jstHour < 20) return 'tips';     // 18:00 JST
-    return 'promo';                                        // 21:00 JST
+    if (jstHour >= 5 && jstHour < 10) return 'morning';    // 07:30 JST (05-10 range)
+    if (jstHour >= 10 && jstHour < 15) return 'lunch';     // 12:00 JST (10-15 range)
+    if (jstHour >= 15 && jstHour < 20) return 'evening';   // 19:30 JST (15-20 range)
+    return 'night';                                        // 22:00 JST (20-05 range)
 }
 
 // --- Data Management ---
@@ -124,6 +125,20 @@ async function main(): Promise<void> {
         console.log(`✅ Tweet posted successfully!`);
         console.log(`   ID: ${result.data.id}`);
         console.log(`   URL: https://x.com/ken_ittech/status/${result.data.id}`);
+
+        // Handle reply (thread)
+        if (post.reply) {
+            console.log(`⏳ Waiting 2 seconds before posting reply...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            try {
+                const replyResult = await client.v2.reply(post.reply, result.data.id);
+                console.log(`✅ Reply posted successfully!`);
+                console.log(`   Reply ID: ${replyResult.data.id}`);
+            } catch (replyError: unknown) {
+                console.error(`⚠️ Failed to post reply (main tweet succeeded):`, replyError);
+            }
+        }
 
         // Mark as posted
         markAsPosted(data, post.id);

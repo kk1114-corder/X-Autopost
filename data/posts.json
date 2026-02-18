@@ -1,129 +1,127 @@
 {
   "posts": [
     {
-      "id": 1,
-      "type": "quiz",
-      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. 「PDCA」の「C」が意味するものはどれ？\n\nA) Control\nB) Check\nC) Create\nD) Change\n\n正解は夕方に発表します！\n\n#ITパスポート #朝活 #IT資格",
-      "posted": true,
-      "postedAt": "2026-02-17T14:16:09.376Z"
-    },
-    {
-      "id": 2,
-      "type": "quiz",
-      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. 企業の情報セキュリティ対策で「機密性」「完全性」と合わせて重要とされるものは？\n\nA) 信頼性\nB) 可用性\nC) 効率性\nD) 保守性\n\n正解は夕方に発表！\n\n#ITパスポート #情報セキュリティ",
-      "posted": true,
-      "postedAt": "2026-02-17T23:01:30.436Z"
-    },
-    {
-      "id": 3,
-      "type": "quiz",
-      "content": "☀️ おはようございます！\n\n【ITパスポート 朝の一問】\n\nQ. プロジェクト管理手法「WBS」は何の略？\n\nA) Web Based System\nB) Work Breakdown Structure\nC) Wide Band Service\nD) Work Base Schedule\n\n正解は夕方に！\n\n#ITパスポート #プロジェクト管理",
+      "id": 101,
+      "type": "morning",
+      "content": "【ITパスポート】SLAとSLMの違い、わかりますか？\n\n似てるけど全然違うやつ。\n\nA) Agreement (合意) vs Management (管理)\nB) Access (接続) vs Monitor (監視)\n\n正解と覚え方はリプ欄で↓\n#ITパスポート #IT勉強",
+      "reply": "正解は A！\n\n✅ SLA (Service Level Agreement)\n「品質保証の契約書」\n稼働率99.9%などの数値を握ること。\n\n✅ SLM (Service Level Management)\n「SLAを守るための改善活動」\nPDCAサイクルのこと。\n\n契約(A)か、管理(M)かで覚えましょう。",
       "posted": false
     },
     {
-      "id": 4,
-      "type": "quiz",
-      "content": "☀️ おはよう！\n\n【基本情報 朝の一問】\n\nQ. OSI参照モデルで「トランスポート層」は第何層？\n\nA) 第3層\nB) 第4層\nC) 第5層\nD) 第6層\n\n#基本情報技術者 #ネットワーク #朝活",
+      "id": 102,
+      "type": "morning",
+      "content": "【共通鍵 vs 公開鍵】\nどっちがどっちか混乱する人向け。\n\n🗝 共通鍵\n・鍵は1つ（家の鍵と同じ）\n・渡すのが大変\n・速い\n\n🗝 公開鍵\n・鍵は2つ（南京錠と鍵）\n・南京錠(公開鍵)をばら撒く\n・遅い\n\n試験では「鍵の管理本数」の計算問題が出ます。\n#基本情報技術者試験",
       "posted": false
     },
     {
-      "id": 5,
-      "type": "quiz",
-      "content": "☀️ おはよう！\n\n【ITパスポート 朝の一問】\n\nQ. 「SaaS」の正式名称は？\n\nA) System as a Service\nB) Software as a Service\nC) Server as a Service\nD) Storage as a Service\n\n#ITパスポート #クラウド #IT資格勉強",
+      "id": 103,
+      "type": "morning",
+      "content": "おはようございます。今日も朝活。\n\n「継続は力なり」と言うけど、個人的には「継続しか力にならない」が正しい気がしてる。\n\n天才じゃない凡人が勝つには、毎日少しずつ積み上げるしかない。\n今日も淡々とやります。\n#駆け出しエンジニア #朝活",
       "posted": false
     },
     {
-      "id": 6,
-      "type": "meme",
-      "content": "【IT勉強あるある】\n\n「よし、カタカナ用語覚えるぞ💪」\n\nアジャイル、スクラム、カンバン、\nリファクタリング、デプロイ、\nマイグレーション、インテグレーション...\n\n全部カタカナやないかい！🫠\n\n#IT勉強あるある #エンジニア",
+      "id": 104,
+      "type": "morning",
+      "content": "【RAIDの種類】\n試験に出る3つだけ覚えとけばOK。\n\n・RAID 0 (ストライピング)\n速い。1台壊れたら全滅。0=無(データが消える)\n\n・RAID 1 (ミラーリング)\n安全。同じデータを書く。1=棒(鏡の棒)\n\n・RAID 5 (パリティ)\nバランス型。計算して分散。\n\n#ITパスポート",
       "posted": false
     },
     {
-      "id": 7,
-      "type": "meme",
-      "content": "【IT勉強あるある】\n\n参考書「この章は簡単です😊」\n\n→ 全然簡単じゃない\n\n参考書「ここは少し難しいです🤔」\n\n→ 宇宙語\n\n#IT資格 #ITパスポート #勉強あるある",
+      "id": 105,
+      "type": "morning",
+      "content": "【ポート番号クイズ】\n\nWebサイトを見るときに使われるポートは？\n\nA) 22\nB) 53\nC) 80 / 443\nD) 3306\n\n正解はリプ欄↓\n#基本情報技術者試験 #ネットワーク",
+      "reply": "正解は C！\n\n・HTTP = 80\n・HTTPS = 443\n\n他も必須知識です。\n・22 = SSH (リモート操作)\n・53 = DNS (名前解決)\n・3306 = MySQL (DB)\n\nセキュリティグループ設定で「なぜ繋がらない？」の9割はこれ。",
       "posted": false
     },
     {
-      "id": 8,
-      "type": "meme",
-      "content": "【エンジニアあるある】\n\n上司「このシステム、簡単に作れる？」\n\n僕「（簡単とは...🤔）」\n\n定義を確認したいエンジニアの性(さが)\n\n#エンジニアあるある #IT業界",
+      "id": 201,
+      "type": "lunch",
+      "content": "【Excel脱マウス計画】\n\n・今日の日付 → Ctrl + ;\n・今の時刻 → Ctrl + :\n\n議事録や作業ログ取るときに、手入力してる時間もったいないです。\n一瞬で入る快感を味わってください。\n#業務効率化 #Excel",
       "posted": false
     },
     {
-      "id": 9,
-      "type": "meme",
-      "content": "IT資格の勉強って\n\n「わかった！」→ 過去問解く → 「わかってなかった...」\n\nの無限ループなんよな😇\n\nでもそれが一番力つく💪\n\n#ITパスポート #基本情報 #勉強垢さんと繋がりたい",
+      "id": 202,
+      "type": "lunch",
+      "content": "午後の眠気覚ましに。\n\nAWSの「S3」は Simple Storage Service の略。\nSが3つあるからS3。\n\nEC2は Elastic Compute Cloud。\nCが2つあるからEC2。\n\nじゃあ「Route 53」の53は？\n答えはリプ欄へ↓\n#AWS",
+      "reply": "DNSのポート番号「53」から来てます。\nおしゃれなネーミングですよね。\n\nちなみにRouteは米国の国道「Route 66」とかのルート。\nDNS（インターネットの道しるべ）だからRoute 53。\nこういう背景知ると忘れません。",
       "posted": false
     },
     {
-      "id": 10,
-      "type": "meme",
-      "content": "朝活3日目 ☀️\n\n今日も6時起きでITパスポートの勉強📖\n\n朝の30分って、夜の2時間くらいの集中力ある気がする\n\n一緒に頑張る人いいね押してください🙌\n\n#朝活 #IT資格 #勉強垢",
+      "id": 203,
+      "type": "lunch",
+      "content": "【Windows 神ショートカット】\n\nWin + V\n\nこれ使ってない人、人生損してます。\n「クリップボード履歴」です。\n\nさっきコピーしたやつ、その前にコピーしたやつ、全部履歴から選んでペーストできます。\n設定でONにするだけ。今すぐやってみて。\n#ショートカットキー",
       "posted": false
     },
     {
-      "id": 11,
-      "type": "tips",
-      "content": "【保存推奨】ITパスポート頻出用語5選\n\n1️⃣ SLA → サービスの品質保証\n2️⃣ BCP → 事業継続計画\n3️⃣ RPA → 業務の自動化\n4️⃣ IoT → モノのインターネット\n5️⃣ DX → デジタル変革\n\nこの5つは毎回出ます。確実に押さえましょう✍️\n\n#ITパスポート #IT用語",
-      "posted": true,
-      "postedAt": "2026-02-18T06:41:51.932Z"
-    },
-    {
-      "id": 12,
-      "type": "tips",
-      "content": "【1ヶ月でITパスポート合格ロードマップ】\n\n📅 Week1: テキスト1周（理解7割でOK）\n📅 Week2: 過去問3回分\n📅 Week3: 苦手分野を集中復習\n📅 Week4: 過去問5回分 + 模擬試験\n\n合格ライン: 1000点中600点\n意外といける！💪\n\n#ITパスポート #勉強法",
+      "id": 204,
+      "type": "lunch",
+      "content": "【パスワードの作り方】\n「意味のある単語」や「短い文字列」は瞬殺されます。\n\n推奨は「パスフレーズ」。\n\nBlue_Coffee_Desk_99!\n\nみたいに、ランダムな単語を繋げる。\n覚えやすいのに、総当たり攻撃にはめちゃくちゃ強い。\n#情報セキュリティ",
       "posted": false
     },
     {
-      "id": 13,
-      "type": "tips",
-      "content": "【知ってた？】\n\nIT業界で最も使われる略語\n\n🔹 API = Application Programming Interface\n→ ソフト同士をつなぐ \"窓口\"\n\n例: 天気アプリが気象庁のデータを取得する時、APIを通じてやり取りしてます\n\n身近に感じると覚えやすい！\n\n#IT用語 #プログラミング初心者",
+      "id": 205,
+      "type": "lunch",
+      "content": "ランチ中に休憩できてる？\n\nポモドーロ・テクニック（25分集中+5分休憩）。\nこれの本当の価値は「強制的に休む」ことにあると思う。\n\nエンジニアは過集中しがち。\n脳がバテる前に休まないと、15時以降の生産性が死にます。\n#仕事術",
       "posted": false
     },
     {
-      "id": 14,
-      "type": "tips",
-      "content": "【SQLの基本】これだけ覚えて！\n\n🔹 SELECT → データを取得\n🔹 INSERT → データを追加\n🔹 UPDATE → データを更新\n🔹 DELETE → データを削除\n\nこの4つが基本中の基本。\n「CRUD」と呼ばれてます📝\n\n#基本情報技術者 #SQL #データベース",
+      "id": 301,
+      "type": "evening",
+      "content": "【SQL事故防止策】\nDELETE や UPDATE を実行する前に。\n\n必ず、同じ条件で SELECT を実行して「対象件数」と「中身」を確認する。\n\nいきなりDELETE流して「0件」ならいいけど、「10000件」って出たら心臓止まるから。\n確認は大事。\n#SQL #データベース",
       "posted": false
     },
     {
-      "id": 15,
-      "type": "tips",
-      "content": "昨日のクイズの答え💡\n\n「PDCA」の「C」= Check（評価）\n\nPlan(計画)→Do(実行)→Check(評価)→Act(改善)\n\nIT業界だけでなく、あらゆるビジネスで使われる超基本フレームワークです📊\n\n#ITパスポート #PDCA #ビジネス知識",
+      "id": 302,
+      "type": "evening",
+      "content": "Gitでやらかした時の呪文まとめ。\n\n・直前のコミット取り消し\ngit reset --soft HEAD^\n\n・コミットメッセージ修正\ngit commit --amend\n\n・作業を一時退避\ngit stash\n\nこれだけ覚えとけば、軽傷は治せます。\n重傷（push後）は…先輩に相談しましょう。\n#Git",
       "posted": false
     },
     {
-      "id": 16,
-      "type": "promo",
-      "content": "IT業界に転職を考えている方へ 💼\n\nまずは自分の「市場価値」を知ることが大事です。\n\n✅ 年収診断ができる\n✅ 未経験OKの求人も多数\n✅ 登録は3分で完了\n\nITパスポートを取得してから登録すると、選択肢がグッと広がります📈\n\n#IT転職 #未経験エンジニア",
-      "posted": true,
-      "postedAt": "2026-02-17T14:40:00Z"
-    },
-    {
-      "id": 17,
-      "type": "promo",
-      "content": "📚 IT資格の勉強、独学だと不安な人へ\n\nUdemyのIT講座、セール時は1,500円〜で受けられます\n\n特にオススメ👇\n・ITパスポート速習コース\n・基本情報午後対策\n・ネットワーク入門\n\n動画で学ぶと理解速度が全然違う🎬\n\n#Udemy #IT学習 #ITパスポート",
-      "posted": true,
-      "postedAt": "2026-02-17T14:43:32.086Z"
-    },
-    {
-      "id": 18,
-      "type": "promo",
-      "content": "【無料で使えるIT学習サイト3選】\n\n1️⃣ Progate → プログラミング入門\n2️⃣ paizaラーニング → 動画で学べる\n3️⃣ ITパスポート過去問道場 → 過去問やり放題\n\n全部無料で始められます💡\nまずは触ってみることが大事！\n\n#IT学習 #プログラミング #無料",
-      "posted": true,
-      "postedAt": "2026-02-18T11:25:54.362Z"
-    },
-    {
-      "id": 19,
-      "type": "promo",
-      "content": "エンジニアのスキルアップに 📖\n\n技術書って高いけど、Kindle Unlimitedなら月980円で読み放題の技術書もあります\n\n特にIT資格系のテキストは充実してる印象 📚\n\n30日間無料体験もあるので、試験前だけ使うのもアリ👍\n\n#技術書 #IT資格 #KindleUnlimited",
+      "id": 303,
+      "type": "evening",
+      "content": "エラーが出た時の対処法で、新人エンジニアの伸びが決まる気がする。\n\n× すぐ人に聞く\n△ 日本語訳してなんとなく直す\n◎ エラー文をそのままググって、原因を特定してから直す\n\n「動けばヨシ」じゃなくて「なぜ動かなかったか」を理解しないと、また同じエラーでハマる。\n#プログラミング初心者",
       "posted": false
     },
     {
-      "id": 20,
-      "type": "promo",
-      "content": "IT未経験から転職を目指す方へ 🚀\n\n最近は「ITパスポート + 基本情報」の2つを持ってると、書類通過率がかなり上がるそうです\n\n資格を取る → エージェントに登録 → 面接対策\n\nこの順番が最短ルートです💡\n\n#IT転職 #キャリアチェンジ #資格取得",
+      "id": 304,
+      "type": "evening",
+      "content": "【Markdownの書き方】\n議事録が汚いと言われたら、Markdownを覚えよう。\n\n# 見出し\n- 箇条書き\n**強調**\n[リンク](URL)\n\nこれだけで十分。\nWordで装飾するより10倍速いし、エンジニアっぽくて見やすい。\n#ドキュメント作成",
+      "posted": false
+    },
+    {
+      "id": 305,
+      "type": "evening",
+      "content": "退勤。\n今日はバグ調査で一日終わった。\n\n原因は「全角スペース」。\n\nIDEの設定で「空白文字を表示する」にしてなかった自分の責任だけど、全角スペースはこの世から滅びてほしい。\nお疲れ様でした。\n#エンジニアあるある",
+      "posted": false
+    },
+    {
+      "id": 401,
+      "type": "night",
+      "content": "【AWS ネットワーク構成図の5要素】\n\n1. VPC (仮想ネットワーク)\n2. Subnet (ネットワークの区画)\n3. Route Table (通信の宛先制御)\n4. Internet Gateway (インターネット接続)\n5. Security Group (ファイアウォール)\n\nまずはこの5つの関係性を図で書けるようになるのが第一歩。\n\n関係性のイメージはリプ欄へ↓\n#AWS #駆け出しエンジニア",
+      "reply": "【イメージ図】\n\nVPC = 土地\nSubnet = 部屋\nRoute Table = 地図・看板\nIGW = 玄関\nSG = 部屋の前のガードマン\n\n「地図(RT)がないと玄関(IGW)に行けない」\n「ガードマン(SG)が通してくれないと入れない」\n\n擬人化するとトラブルシューティングが早くなります。",
+      "posted": false
+    },
+    {
+      "id": 402,
+      "type": "night",
+      "content": "【PMP】ステークホルダーの分類\n\nプロジェクトに関わる人は4タイプに分けて対応を変える。\n\n1. 影響度大・関心度大 → 重点管理 (最重要人物)\n2. 影響度大・関心度小 → 満足維持\n3. 影響度小・関心度大 → 情報提供\n4. 影響度小・関心度小 → 監視\n\n「声の大きい人」より「影響力の大きい人」を見極めるのがPMの仕事。\n#PMP #プロジェクトマネジメント",
+      "posted": false
+    },
+    {
+      "id": 403,
+      "type": "night",
+      "content": "【Java Silver】オーバーライドの注意点\n\n親クラスのメソッドを上書きするとき。\n\n× アクセス修飾子を厳しくする\n(public → protected はNG)\n\n◎ アクセス修飾子を緩くする\n(protected → public はOK)\n\n親ができることは子もできなきゃいけないから。\nここ、試験でよく出ます。\n#Java #プログラミング",
+      "posted": false
+    },
+    {
+      "id": 404,
+      "type": "night",
+      "content": "【CCNA】IPアドレスのクラス\n\nクラスA: 1.0.0.0 ~\nクラスB: 128.0.0.0 ~\nクラスC: 192.0.0.0 ~\n\nあれ、127 は？\n\n127.x.x.x は「ループバックアドレス（自分自身）」。\n`ping 127.0.0.1` は「自分にPing打つ」こと。\nNICが壊れてないかの確認に使います。\n#CCNA #ネットワーク",
+      "posted": false
+    },
+    {
+      "id": 405,
+      "type": "night",
+      "content": "【LPIC】権限 (chmod) の数値\n\nRead(r) = 4\nWrite(w) = 2\nExecute(x) = 1\n\n全部盛り = 7 (4+2+1)\n読み書き = 6 (4+2)\n読み実行 = 5 (4+1)\n\n`chmod 755` とかよく見るやつ。\n所有者は全部(7)、他は読み実行(5,5)。\n足し算で覚えよう。\n#LPIC #Linux",
       "posted": false
     }
   ]
