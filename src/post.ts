@@ -13,7 +13,7 @@ const __dirname = dirname(__filename);
 // --- Types ---
 interface Post {
     id: number;
-    type: 'morning' | 'lunch' | 'evening' | 'night';
+    type: 'morning' | 'lunch' | 'afternoon' | 'evening' | 'night';
     content: string;
     reply?: string;
     posted: boolean;
@@ -45,11 +45,18 @@ function createClient(): TwitterApi {
     });
 }
 
+// --- Helper Functions ---
+function randomDelay(minMinutes: number, maxMinutes: number): Promise<void> {
+    const delayMs = Math.floor(Math.random() * (maxMinutes - minMinutes + 1) + minMinutes) * 60 * 1000;
+    console.log(`🎲 Random delay: ${Math.floor(delayMs / 1000 / 60)} minutes (${delayMs}ms)`);
+    return new Promise(resolve => setTimeout(resolve, delayMs));
+}
+
 // --- Post Type Selection ---
 function getPostType(): Post['type'] {
     // Allow override via env
     const override = process.env.POST_TYPE as Post['type'] | undefined;
-    if (override && ['morning', 'lunch', 'evening', 'night'].includes(override)) {
+    if (override && ['morning', 'lunch', 'afternoon', 'evening', 'night'].includes(override)) {
         return override;
     }
 
@@ -57,10 +64,16 @@ function getPostType(): Post['type'] {
     const now = new Date();
     const jstHour = (now.getUTCHours() + 9) % 24;
 
-    if (jstHour >= 5 && jstHour < 10) return 'morning';    // 07:30 JST (05-10 range)
-    if (jstHour >= 10 && jstHour < 15) return 'lunch';     // 12:00 JST (10-15 range)
-    if (jstHour >= 15 && jstHour < 20) return 'evening';   // 19:30 JST (15-20 range)
-    return 'night';                                        // 22:00 JST (20-05 range)
+    // 07:30, 10:00 -> morning
+    if (jstHour >= 5 && jstHour < 11) return 'morning';
+    // 12:00 -> lunch
+    if (jstHour >= 11 && jstHour < 14) return 'lunch';
+    // 15:00 -> afternoon
+    if (jstHour >= 14 && jstHour < 17) return 'afternoon';
+    // 18:00 -> evening
+    if (jstHour >= 17 && jstHour < 19) return 'evening';
+    // 20:00, 22:30 -> night
+    return 'night';
 }
 
 // --- Data Management ---
@@ -92,10 +105,16 @@ function markAsPosted(data: PostsData, postId: number): void {
 // --- Main ---
 async function main(): Promise<void> {
     const isDryRun = process.argv.includes('--dry-run');
-    const postType = getPostType();
 
     console.log(`\n🤖 SNS Auto Poster`);
     console.log(`📅 ${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
+
+    if (!isDryRun) {
+        // Random delay 1-5 minutes to avoid bot detection
+        await randomDelay(1, 5);
+    }
+
+    const postType = getPostType();
     console.log(`📝 Post type: ${postType}`);
     console.log(`${isDryRun ? '🧪 DRY RUN MODE' : '🚀 LIVE MODE'}\n`);
 
@@ -114,6 +133,9 @@ async function main(): Promise<void> {
 
     if (isDryRun) {
         console.log('✅ Dry run complete. No tweet was sent.');
+        if (post.reply) {
+            console.log(`   (Would have posted reply: "${post.reply.substring(0, 50)}...")`);
+        }
         return;
     }
 

@@ -7,12 +7,18 @@ on:
   schedule:
     # JST 07:30 = UTC 22:30 (previous day)
     - cron: '30 22 * * *'
+    # JST 10:00 = UTC 01:00
+    - cron: '0 1 * * *'
     # JST 12:00 = UTC 03:00
     - cron: '0 3 * * *'
-    # JST 19:30 = UTC 10:30
-    - cron: '30 10 * * *'
-    # JST 22:00 = UTC 13:00
-    - cron: '0 13 * * *'
+    # JST 15:00 = UTC 06:00
+    - cron: '0 6 * * *'
+    # JST 18:00 = UTC 09:00
+    - cron: '0 9 * * *'
+    # JST 20:00 = UTC 11:00
+    - cron: '0 11 * * *'
+    # JST 22:30 = UTC 13:30
+    - cron: '30 13 * * *'
   # Allow manual trigger
   workflow_dispatch:
     inputs:
