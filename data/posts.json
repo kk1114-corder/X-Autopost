@@ -129,7 +129,8 @@
       "id": 301,
       "type": "evening",
       "content": "【SQL事故防止策】\nDELETE や UPDATE を実行する前に。\n\n必ず、同じ条件で SELECT を実行して「対象件数」と「中身」を確認する。\n\nいきなりDELETE流して「0件」ならいいけど、「10000件」って出たら心臓止まるから。\n確認は大事。\n#SQL #データベース",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-19T08:07:18.322Z"
     },
     {
       "id": 302,
