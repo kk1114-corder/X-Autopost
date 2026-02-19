@@ -193,7 +193,8 @@
       "id": 403,
       "type": "night",
       "content": "【Java Silver】オーバーライドの注意点\n\n親クラスのメソッドを上書きするとき。\n\n× アクセス修飾子を厳しくする\n(public → protected はNG)\n\n◎ アクセス修飾子を緩くする\n(protected → public はOK)\n\n親ができることは子もできなきゃいけないから。\nここ、試験でよく出ます。\n#Java #プログラミング",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-19T16:10:03.369Z"
     },
     {
       "id": 404,
