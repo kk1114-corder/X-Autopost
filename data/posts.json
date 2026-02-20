@@ -211,7 +211,8 @@
       "id": 405,
       "type": "night",
       "content": "【LPIC】権限 (chmod) の数値\n\nRead(r) = 4\nWrite(w) = 2\nExecute(x) = 1\n\n全部盛り = 7 (4+2+1)\n読み書き = 6 (4+2)\n読み実行 = 5 (4+1)\n\n`chmod 755` とかよく見るやつ。\n所有者は全部(7)、他は読み実行(5,5)。\n足し算で覚えよう。\n#LPIC #Linux",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-20T12:00:53.630Z"
     },
     {
       "id": 406,
