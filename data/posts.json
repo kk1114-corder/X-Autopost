@@ -112,7 +112,8 @@
       "id": 252,
       "type": "afternoon",
       "content": "【VS Code便利機能】\n\nCtrl + D：同じ単語を選択（連打すると複数選択）\n\n変数名の一括変更や、JSONの整形にめちゃくちゃ便利。\nこれ知らないと置換機能使っちゃうけど、Ctrl+Dの方が直感的で速い。\n#VSCode #プログラミング",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-20T05:23:15.616Z"
     },
     {
       "id": 253,
