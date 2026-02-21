@@ -228,7 +228,8 @@
       "id": 407,
       "type": "night",
       "content": "夜はAWSのハンズオン。\n\nCloudFormationでインフラ構築。\nGUIでポチポチ作るのもいいけど、コードで管理できる安心感すごい。\n\n「インフラもコード」 (IaC)。\nこれからのエンジニアの必修科目な気がする。\nエラーでスタックロールバックした時の絶望感も含めて勉強。\n#AWS #IaC",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-21T11:46:14.771Z"
     },
     {
       "id": 408,
