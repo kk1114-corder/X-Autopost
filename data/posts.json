@@ -127,7 +127,8 @@
       "id": 254,
       "type": "afternoon",
       "content": "【変数の命名規則】\n\ncamelCase：先頭小文字、単語区切り大文字 (Java, JS)\nSnake_Case：アンダースコア区切り (Python, DB)\nPascalCase：先頭大文字 (Class名)\n\nkebab-case：ハイフン区切り (URL, CSS)\n\n現場のルールに従うのが正解だけど、統一されてないコード見ると発狂しそうになる。\n#プログラミング",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-21T05:01:19.754Z"
     },
     {
       "id": 301,
