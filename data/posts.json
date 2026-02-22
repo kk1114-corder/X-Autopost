@@ -244,7 +244,8 @@
       "id": 409,
       "type": "night",
       "content": "【Java】InterfaceとAbstract Classの違い\n\nInterface：\n・多重継承できる (implements A, B)\n・定数と抽象メソッドだけ (Java8以降はdefaultメソッドも)\n\nAbstract Class：\n・単一継承のみ (extends A)\n・普通のメソッドも持てる\n\n「機能の約束」か「共通処理の親」か。\n使い分け難しいけど大事。\n#Java",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-22T11:45:50.693Z"
     }
   ]
 }
