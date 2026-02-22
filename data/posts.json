@@ -156,7 +156,8 @@
       "id": 304,
       "type": "evening",
       "content": "【Markdownの書き方】\n議事録が汚いと言われたら、Markdownを覚えよう。\n\n# 見出し\n- 箇条書き\n**強調**\n[リンク](URL)\n\nこれだけで十分。\nWordで装飾するより10倍速いし、エンジニアっぽくて見やすい。\n#ドキュメント作成",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-22T09:57:20.471Z"
     },
     {
       "id": 305,
