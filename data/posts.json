@@ -180,7 +180,8 @@
       "id": 307,
       "type": "evening",
       "content": "【Linuxコマンド：ls】\n\nls -l ：詳細表示\nls -a ：隠しファイル表示\nls -h ：サイズを人間に読みやすく(KB, MB)\n\n`ls -lah` は手癖になってる。\n#Linux #LPIC",
-      "posted": false
+      "posted": true,
+      "postedAt": "2026-02-25T08:08:56.711Z"
     },
     {
       "id": 308,
