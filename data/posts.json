@@ -5,28 +5,28 @@
       "type": "morning",
       "content": "【ITパスポート】SLAとSLMの違い\n\n似てるけど全然違うやつ。\n\nA) Agreement (合意) vs Management (管理)\nB) Access (接続) vs Monitor (監視)\n\n正解と覚え方はリプ欄で↓\n#ITパスポート #IT勉強",
       "reply": "正解は A！\n\n✅ SLA (Service Level Agreement)\n「品質保証の契約書」\n稼働率99.9%などの数値を握ること。\n\n✅ SLM (Service Level Management)\n「SLAを守るための改善活動」\nPDCAサイクルのこと。\n\n契約(A)か、管理(M)かで覚えましょう。",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-18T23:52:29.902Z"
     },
     {
       "id": 102,
       "type": "morning",
       "content": "【共通鍵 vs 公開鍵】\nどっちがどっちか混乱する人向け。\n\n🗝 共通鍵\n・鍵は1つ（家の鍵と同じ）\n・渡すのが大変\n・速い\n\n🗝 公開鍵\n・鍵は2つ（南京錠と鍵）\n・南京錠(公開鍵)をばら撒く\n・遅い\n\n試験では「鍵の管理本数」の計算問題が出ます。\n#基本情報技術者試験",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T23:55:56.540Z"
     },
     {
       "id": 103,
       "type": "morning",
       "content": "おはようございます。今日も朝活。\n\n「継続は力なり」と言うけど、個人的には「継続しか力にならない」が正しい気がしてる。\n\n天才じゃない凡人が勝つには、毎日少しずつ積み上げるしかない。\n今日も淡々とやります。\n#駆け出しエンジニア #朝活",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T23:49:49.478Z"
     },
     {
       "id": 104,
       "type": "morning",
       "content": "【RAIDの種類】\n試験に出る3つだけ覚えとけばOK。\n\n・RAID 0 (ストライピング)\n速い。1台壊れたら全滅。0=無(データが消える)\n\n・RAID 1 (ミラーリング)\n安全。同じデータを書く。1=棒(鏡の棒)\n\n・RAID 5 (パリティ)\nバランス型。計算して分散。\n\n#ITパスポート",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-21T23:02:56.381Z"
     },
     {
@@ -34,35 +34,35 @@
       "type": "morning",
       "content": "【ポート番号クイズ】\n\nWebサイトを見るときに使われるポートは？\n\nA) 22\nB) 53\nC) 80 / 443\nD) 3306\n\n正解はリプ欄↓\n#基本情報技術者試験 #ネットワーク",
       "reply": "正解は C！\n\n・HTTP = 80\n・HTTPS = 443\n\n他も必須知識です。\n・22 = SSH (リモート操作)\n・53 = DNS (名前解決)\n・3306 = MySQL (DB)\n\nセキュリティグループ設定で「なぜ繋がらない？」の9割はこれ。",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-22T23:03:46.602Z"
     },
     {
       "id": 106,
       "type": "morning",
       "content": "仕事開始。\n\nメールチェックの前に「今日絶対終わらせるタスク」を1つだけ決める。\nこれやらないと、メール返信だけで午前中が終わるから。\n\nエンジニアの敵はバグじゃなくて「割り込みタスク」だと思う。\n#仕事術",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-23T23:53:36.953Z"
     },
     {
       "id": 107,
       "type": "morning",
       "content": "【プロトコルの覚え方：OSI参照モデル】\n\nレイヤ7 (アプリ): HTTP, SMTP, FTP\nレイヤ4 (トランスポート): TCP, UDP\nレイヤ3 (ネット): IP, ICMP\n\n「アプセトネデブ」って語呂合わせで覚えたけど、実務だと「これL4の問題？L7の問題？」って会話が普通に出る。\n暗記じゃなくてイメージ大事。\n#基本情報技術者試験",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-24T23:59:45.196Z"
     },
     {
       "id": 108,
       "type": "morning",
       "content": "朝のコードリーディング。\n\n他人のコードを読むのは「無料の技術書」を読むのと同じ。\n「なんでこう書いたんだろ？」って考えると自分の引き出しが増える。\n\nなお、「なんでこんなクソコード書いたんだ」と思うこともある模様。\n#エンジニアの日常",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-25T23:51:36.168Z"
     },
     {
       "id": 201,
       "type": "lunch",
       "content": "【Excel脱マウス計画】\n\n・今日の日付 → Ctrl + ;\n・今の時刻 → Ctrl + :\n\n議事録や作業ログ取るときに、手入力してる時間もったいないです。\n一瞬で入る快感を味わってください。\n#業務効率化 #Excel",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-28T04:46:28.405Z"
     },
     {
@@ -105,91 +105,91 @@
       "id": 250,
       "type": "afternoon",
       "content": "AWSの「Route 53」の53は、DNSのポート番号から来てる。\nおしゃれなネーミング。\n\nちなみにS3は「Simple Storage Service」でSが3つ。\nEC2は「Elastic Compute Cloud」でCが2つ。\n\nAWSの命名、ダジャレっぽくて好き。\n#AWS",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T05:42:04.688Z"
     },
     {
       "id": 251,
       "type": "afternoon",
       "content": "眠くなってくる時間。\n\nカフェイン錠剤か、ブラックコーヒーか。\nエンジニアの必須スキルは「カフェイン耐性」かもしれない。\n\nとりあえず15分だけ仮眠（パワーナップ）とる。\nこれが一番効く。\n#エンジニアあるある",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T06:21:39.854Z"
     },
     {
       "id": 252,
       "type": "afternoon",
       "content": "【VS Code便利機能】\n\nCtrl + D：同じ単語を選択（連打すると複数選択）\n\n変数名の一括変更や、JSONの整形にめちゃくちゃ便利。\nこれ知らないと置換機能使っちゃうけど、Ctrl+Dの方が直感的で速い。\n#VSCode #プログラミング",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T05:23:15.616Z"
     },
     {
       "id": 253,
       "type": "afternoon",
       "content": "設計書書いてる。\n\n「なんとなく」で作ると後で地獄を見る。\nコード書く時間より設計考える時間の方が長い方が、結果的に早く終わる。\n\nと、バグ修正で泣きを見た過去の自分に言いたい。\n#システム開発",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T06:12:59.098Z"
     },
     {
       "id": 254,
       "type": "afternoon",
       "content": "【変数の命名規則】\n\ncamelCase：先頭小文字、単語区切り大文字 (Java, JS)\nSnake_Case：アンダースコア区切り (Python, DB)\nPascalCase：先頭大文字 (Class名)\n\nkebab-case：ハイフン区切り (URL, CSS)\n\n現場のルールに従うのが正解だけど、統一されてないコード見ると発狂しそうになる。\n#プログラミング",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-21T05:01:19.754Z"
     },
     {
       "id": 301,
       "type": "evening",
       "content": "【SQL事故防止策】\nDELETE や UPDATE を実行する前に。\n\n必ず、同じ条件で SELECT を実行して「対象件数」と「中身」を確認する。\n\nいきなりDELETE流して「0件」ならいいけど、「10000件」って出たら心臓止まるから。\n確認は大事。\n#SQL #データベース",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T08:07:18.322Z"
     },
     {
       "id": 302,
       "type": "evening",
       "content": "Gitでやらかした時の呪文まとめ。\n\n・直前のコミット取り消し\ngit reset --soft HEAD^\n\n・コミットメッセージ修正\ngit commit --amend\n\n・作業を一時退避\ngit stash\n\nこれだけ覚えとけば、軽傷は治せます。\n重傷（push後）は…先輩に相談しましょう。\n#Git",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T08:05:37.789Z"
     },
     {
       "id": 303,
       "type": "evening",
       "content": "エラーが出た時の対処法で、新人エンジニアの伸びが決まる気がする。\n\n× すぐ人に聞く\n△ 日本語訳してなんとなく直す\n◎ エラー文をそのままググって、原因を特定してから直す\n\n「動けばヨシ」じゃなくて「なぜ動かなかったか」を理解しないと、また同じエラーでハマる。\n#プログラミング初心者",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-21T09:58:20.492Z"
     },
     {
       "id": 304,
       "type": "evening",
       "content": "【Markdownの書き方】\n議事録が汚いと言われたら、Markdownを覚えよう。\n\n# 見出し\n- 箇条書き\n**強調**\n[リンク](URL)\n\nこれだけで十分。\nWordで装飾するより10倍速いし、エンジニアっぽくて見やすい。\n#ドキュメント作成",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-22T09:57:20.471Z"
     },
     {
       "id": 305,
       "type": "evening",
       "content": "退勤。\n今日はバグ調査で一日終わった。\n\n原因は「全角スペース」。\n\nIDEの設定で「空白文字を表示する」にしてなかった自分の責任だけど、全角スペースはこの世から滅びてほしい。\nお疲れ様でした。\n#エンジニアあるある",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-23T08:07:19.802Z"
     },
     {
       "id": 306,
       "type": "evening",
       "content": "定時退社チャレンジ失敗。\n\n夕会で「あ、これ追加で」って言われるの、もはや様式美。\n\nでも今日はAWSの学習時間が欲しかったから、潔く切り上げて帰る。\n明日の自分、頑張れ。\n#SIerあるある",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-24T08:10:09.632Z"
     },
     {
       "id": 307,
       "type": "evening",
       "content": "【Linuxコマンド：ls】\n\nls -l ：詳細表示\nls -a ：隠しファイル表示\nls -h ：サイズを人間に読みやすく(KB, MB)\n\n`ls -lah` は手癖になってる。\n#Linux #LPIC",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-25T08:08:56.711Z"
     },
     {
       "id": 308,
       "type": "evening",
       "content": "コードレビューで「これなんでここにあるの？」って聞かれて答えられない時が一番恥ずかしい。\n\nコピペしましたとは言えない空気。\n\n「動くコード」より「説明できるコード」を書こうと誓った日。\n#駆け出しエンジニア",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-26T08:07:28.917Z"
     },
     {
@@ -197,63 +197,63 @@
       "type": "night",
       "content": "【AWS ネットワーク構成図の5要素】\n\n1. VPC (仮想ネットワーク)\n2. Subnet (ネットワークの区画)\n3. Route Table (通信の宛先制御)\n4. Internet Gateway (インターネット接続)\n5. Security Group (ファイアウォール)\n\nまずはこの5つの関係性を図で書けるようになるのが第一歩。\n\n関係性のイメージはリプ欄へ↓\n#AWS #駆け出しエンジニア",
       "reply": "【イメージ図】\n\nVPC = 土地\nSubnet = 部屋\nRoute Table = 地図・看板\nIGW = 玄関\nSG = 部屋の前のガードマン\n\n「地図(RT)がないと玄関(IGW)に行けない」\n「ガードマン(SG)が通してくれないと入れない」\n\n擬人化するとトラブルシューティングが早くなります。",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T11:31:30.553Z"
     },
     {
       "id": 402,
       "type": "night",
       "content": "【PMP】ステークホルダーの分類\n\nプロジェクトに関わる人は4タイプに分けて対応を変える。\n\n1. 影響度大・関心度大 → 重点管理 (最重要人物)\n2. 影響度大・関心度小 → 満足維持\n3. 影響度小・関心度大 → 情報提供\n4. 影響度小・関心度小 → 監視\n\n「声の大きい人」より「影響力の大きい人」を見極めるのがPMの仕事。\n#PMP #プロジェクトマネジメント",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T12:08:16.121Z"
     },
     {
       "id": 403,
       "type": "night",
       "content": "【Java Silver】オーバーライドの注意点\n\n親クラスのメソッドを上書きするとき。\n\n× アクセス修飾子を厳しくする\n(public → protected はNG)\n\n◎ アクセス修飾子を緩くする\n(protected → public はOK)\n\n親ができることは子もできなきゃいけないから。\nここ、試験でよく出ます。\n#Java #プログラミング",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-19T16:10:03.369Z"
     },
     {
       "id": 404,
       "type": "night",
       "content": "【CCNA】IPアドレスのクラス\n\nクラスA: 1.0.0.0 ~\nクラスB: 128.0.0.0 ~\nクラスC: 192.0.0.0 ~\n\nあれ、127 は？\n\n127.x.x.x は「ループバックアドレス（自分自身）」。\n`ping 127.0.0.1` は「自分にPing打つ」こと。\nNICが壊れてないかの確認に使います。\n#CCNA #ネットワーク",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T11:05:09.242Z"
     },
     {
       "id": 405,
       "type": "night",
       "content": "【LPIC】権限 (chmod) の数値\n\nRead(r) = 4\nWrite(w) = 2\nExecute(x) = 1\n\n全部盛り = 7 (4+2+1)\n読み書き = 6 (4+2)\n読み実行 = 5 (4+1)\n\n`chmod 755` とかよく見るやつ。\n所有者は全部(7)、他は読み実行(5,5)。\n足し算で覚えよう。\n#LPIC #Linux",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T12:00:53.630Z"
     },
     {
       "id": 406,
       "type": "night",
       "content": "【基本情報】論理回路（AND, OR, XOR）\n\nAND (論理積)：両方1なら1\nOR (論理和)：どっちか1なら1\nXOR (排他的論理和)：違うなら1\n\n特にXORは「暗号化」や「パリティチェック」で使われる。\n「違うやつが好き」って覚えると忘れない。\n#基本情報技術者試験",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-20T15:29:35.998Z"
     },
     {
       "id": 407,
       "type": "night",
       "content": "夜はAWSのハンズオン。\n\nCloudFormationでインフラ構築。\nGUIでポチポチ作るのもいいけど、コードで管理できる安心感すごい。\n\n「インフラもコード」 (IaC)。\nこれからのエンジニアの必修科目な気がする。\nエラーでスタックロールバックした時の絶望感も含めて勉強。\n#AWS #IaC",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-21T11:46:14.771Z"
     },
     {
       "id": 408,
       "type": "night",
       "content": "【PMP】WBS (Work Breakdown Structure)\n\n作業を分解構造図にすること。\nポイントは「成果物」ベースで分解すること。\n\n「何をするか」じゃなくて「何を作るか」。\n\n一番下は「ワークパッケージ」と呼ぶ。\n8/80ルール（8時間以上80時間以内）が目安。\n#PMP",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-21T14:08:33.481Z"
     },
     {
       "id": 409,
       "type": "night",
       "content": "【Java】InterfaceとAbstract Classの違い\n\nInterface：\n・多重継承できる (implements A, B)\n・定数と抽象メソッドだけ (Java8以降はdefaultメソッドも)\n\nAbstract Class：\n・単一継承のみ (extends A)\n・普通のメソッドも持てる\n\n「機能の約束」か「共通処理の親」か。\n使い分け難しいけど大事。\n#Java",
-      "posted": true,
+      "posted": false,
       "postedAt": "2026-02-22T11:45:50.693Z"
     }
   ]
