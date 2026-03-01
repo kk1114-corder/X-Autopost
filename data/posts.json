@@ -197,8 +197,8 @@
       "type": "night",
       "content": "【AWS ネットワーク構成図の5要素】\n\n1. VPC (仮想ネットワーク)\n2. Subnet (ネットワークの区画)\n3. Route Table (通信の宛先制御)\n4. Internet Gateway (インターネット接続)\n5. Security Group (ファイアウォール)\n\nまずはこの5つの関係性を図で書けるようになるのが第一歩。\n\n関係性のイメージはリプ欄へ↓\n#AWS #駆け出しエンジニア",
       "reply": "【イメージ図】\n\nVPC = 土地\nSubnet = 部屋\nRoute Table = 地図・看板\nIGW = 玄関\nSG = 部屋の前のガードマン\n\n「地図(RT)がないと玄関(IGW)に行けない」\n「ガードマン(SG)が通してくれないと入れない」\n\n擬人化するとトラブルシューティングが早くなります。",
-      "posted": false,
-      "postedAt": "2026-02-19T11:31:30.553Z"
+      "posted": true,
+      "postedAt": "2026-03-01T11:44:18.279Z"
     },
     {
       "id": 402,
