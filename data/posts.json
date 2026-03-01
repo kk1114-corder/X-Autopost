@@ -5,8 +5,8 @@
       "type": "morning",
       "content": "【ITパスポート】SLAとSLMの違い\n\n似てるけど全然違うやつ。\n\nA) Agreement (合意) vs Management (管理)\nB) Access (接続) vs Monitor (監視)\n\n正解と覚え方はリプ欄で↓\n#ITパスポート #IT勉強",
       "reply": "正解は A！\n\n✅ SLA (Service Level Agreement)\n「品質保証の契約書」\n稼働率99.9%などの数値を握ること。\n\n✅ SLM (Service Level Management)\n「SLAを守るための改善活動」\nPDCAサイクルのこと。\n\n契約(A)か、管理(M)かで覚えましょう。",
-      "posted": false,
-      "postedAt": "2026-02-18T23:52:29.902Z"
+      "posted": true,
+      "postedAt": "2026-03-01T23:03:10.514Z"
     },
     {
       "id": 102,
