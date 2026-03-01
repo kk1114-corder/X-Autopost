@@ -160,6 +160,27 @@ async function main(): Promise<void> {
             } catch (replyError: unknown) {
                 console.error(`⚠️ Failed to post reply (main tweet succeeded):`, replyError);
             }
+        } else if (!isDryRun) {
+            // Randomly attach a promotional CTA to non-quiz posts (e.g., 30% chance)
+            const ctaRate = 0.3;
+            if (Math.random() < ctaRate) {
+                const ctas = [
+                    "👇私が未経験からITパスポートに一発合格した時に使った神テキストはこちら。図解が多くて初心者に超おすすめです📚\nhttps://hb.afl.rakuten.co.jp/ichiba/3ee12345.6789abcd.3ee12346.ef012345/",
+                    "👇エンジニアの肩こり対策に買ったら人生変わったPCスタンド。目線が上がって最高です💻\nhttps://hb.afl.rakuten.co.jp/ichiba/example_stand",
+                    "👇デスク周りの配線地獄から解放してくれたAnkerのマグネットケーブルホルダー。もっと早く買えばよかった⚡️\nhttps://hb.afl.rakuten.co.jp/ichiba/example_cable"
+                ];
+                const randomCta = ctas[Math.floor(Math.random() * ctas.length)];
+
+                console.log(`🎁 Selected for Promotional CTA! Waiting 3 seconds...`);
+                await new Promise(resolve => setTimeout(resolve, 3000));
+                try {
+                    const ctaResult = await client.v2.reply(randomCta, result.data.id);
+                    console.log(`✅ Promotional CTA posted successfully!`);
+                    console.log(`   Reply ID: ${ctaResult.data.id}`);
+                } catch (ctaError: unknown) {
+                    console.error(`⚠️ Failed to post Promotional CTA:`, ctaError);
+                }
+            }
         }
 
         // Mark as posted
