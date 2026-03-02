@@ -105,8 +105,8 @@
       "id": 250,
       "type": "afternoon",
       "content": "AWSの「Route 53」の53は、DNSのポート番号から来てる。\nおしゃれなネーミング。\n\nちなみにS3は「Simple Storage Service」でSが3つ。\nEC2は「Elastic Compute Cloud」でCが2つ。\n\nAWSの命名、ダジャレっぽくて好き。\n#AWS",
-      "posted": false,
-      "postedAt": "2026-02-19T05:42:04.688Z"
+      "posted": true,
+      "postedAt": "2026-03-02T05:22:43.384Z"
     },
     {
       "id": 251,
