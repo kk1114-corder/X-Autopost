@@ -147,8 +147,8 @@
       "id": 302,
       "type": "evening",
       "content": "Gitでやらかした時の呪文まとめ。\n\n・直前のコミット取り消し\ngit reset --soft HEAD^\n\n・コミットメッセージ修正\ngit commit --amend\n\n・作業を一時退避\ngit stash\n\nこれだけ覚えとけば、軽傷は治せます。\n重傷（push後）は…先輩に相談しましょう。\n#Git",
-      "posted": false,
-      "postedAt": "2026-02-20T08:05:37.789Z"
+      "posted": true,
+      "postedAt": "2026-03-03T08:01:07.655Z"
     },
     {
       "id": 303,
