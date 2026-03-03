@@ -161,13 +161,20 @@ async function main(): Promise<void> {
                 console.error(`⚠️ Failed to post reply (main tweet succeeded):`, replyError);
             }
         } else if (!isDryRun) {
-            // Randomly attach a promotional CTA to non-quiz posts (e.g., 30% chance)
-            const ctaRate = 0.3;
+            // Randomly attach a promotional CTA to non-quiz posts (e.g., 40% chance)
+            const ctaRate = 0.4;
             if (Math.random() < ctaRate) {
                 const ctas = [
-                    "👇私が未経験からITパスポートに一発合格した時に使った神テキストはこちら。図解が多くて初心者に超おすすめです📚\nhttps://hb.afl.rakuten.co.jp/ichiba/3ee12345.6789abcd.3ee12346.ef012345/",
-                    "👇エンジニアの肩こり対策に買ったら人生変わったPCスタンド。目線が上がって最高です💻\nhttps://hb.afl.rakuten.co.jp/ichiba/example_stand",
-                    "👇デスク周りの配線地獄から解放してくれたAnkerのマグネットケーブルホルダー。もっと早く買えばよかった⚡️\nhttps://hb.afl.rakuten.co.jp/ichiba/example_cable"
+                    // 基本情報技術者試験テキスト（楽天アフィリエイト）※URLは実際のアフィリエイトリンクに差し替えてください
+                    "📚基本情報技術者試験に一発合格した参考書はこれ。図解が豊富で独学でも分かりやすい↓\nhttps://hb.afl.rakuten.co.jp/ichiba/3ee12345.6789abcd.3ee12346.ef012345/",
+                    // ITパスポートテキスト（楽天アフィリエイト）※URLは実際のアフィリエイトリンクに差し替えてください
+                    "📖ITパスポート合格に使った参考書はこれ一択。過去問解説が詳しくて効率よく合格できます↓\nhttps://hb.afl.rakuten.co.jp/ichiba/3ee12345.6789abcd.3ee12346.ef012346/",
+                    // 転職サイト（doda）※URLは実際のアフィリエイトリンクに差し替えてください
+                    "💼IT資格を活かして転職するならdoda。ITエンジニア求人が豊富でエージェントのサポートも手厚い↓\nhttps://px.a8.net/svt/ejp?a8mat=DODA_AFFILIATE_PLACEHOLDER",
+                    // 転職サイト（レバテックキャリア）※URLは実際のアフィリエイトリンクに差し替えてください
+                    "🚀エンジニア転職専門のレバテックキャリア。未経験〜経験者まで対応、書類添削も無料↓\nhttps://levtech.jp/affiliate/PLACEHOLDER",
+                    // Udemy IT資格講座 ※URLは実際のアフィリエイトリンクに差し替えてください
+                    "🎓ITパスポート・基本情報の動画講座はUdemyが分かりやすい。セール時は90%OFFで買えます↓\nhttps://click.linksynergy.com/PLACEHOLDER"
                 ];
                 const randomCta = ctas[Math.floor(Math.random() * ctas.length)];
 
