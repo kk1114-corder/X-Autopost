@@ -1,8 +1,9 @@
 import { TwitterApi } from 'twitter-api-v2';
 import { config } from 'dotenv';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { generateImage, CardData } from './generate-image.js';
 
 // Load .env
 config();
@@ -16,6 +17,7 @@ interface Post {
     type: 'morning' | 'lunch' | 'afternoon' | 'evening' | 'night';
     content: string;
     reply?: string;
+    image?: CardData;
     posted: boolean;
     postedAt?: string;
 }
@@ -54,25 +56,18 @@ function randomDelay(minMinutes: number, maxMinutes: number): Promise<void> {
 
 // --- Post Type Selection ---
 function getPostType(): Post['type'] {
-    // Allow override via env
     const override = process.env.POST_TYPE as Post['type'] | undefined;
     if (override && ['morning', 'lunch', 'afternoon', 'evening', 'night'].includes(override)) {
         return override;
     }
 
-    // Auto-select based on JST hour
     const now = new Date();
     const jstHour = (now.getUTCHours() + 9) % 24;
 
-    // 07:30, 10:00 -> morning
     if (jstHour >= 5 && jstHour < 11) return 'morning';
-    // 12:00 -> lunch
     if (jstHour >= 11 && jstHour < 14) return 'lunch';
-    // 15:00 -> afternoon
     if (jstHour >= 14 && jstHour < 17) return 'afternoon';
-    // 18:00 -> evening
     if (jstHour >= 17 && jstHour < 19) return 'evening';
-    // 20:00, 22:30 -> night
     return 'night';
 }
 
@@ -110,7 +105,6 @@ async function main(): Promise<void> {
     console.log(`📅 ${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`);
 
     if (!isDryRun) {
-        // Random delay 1-5 minutes to avoid bot detection
         await randomDelay(1, 5);
     }
 
@@ -118,23 +112,33 @@ async function main(): Promise<void> {
     console.log(`📝 Post type: ${postType}`);
     console.log(`${isDryRun ? '🧪 DRY RUN MODE' : '🚀 LIVE MODE'}\n`);
 
-    // Load posts
     const data = loadPosts();
     const post = selectNextPost(data, postType);
 
     if (!post) {
         console.log(`⚠️ No unposted "${postType}" content available.`);
-        console.log(`   Add more posts to data/posts.json`);
         process.exit(0);
     }
 
     console.log(`📋 Selected post #${post.id}:`);
     console.log(`   "${post.content.substring(0, 80)}..."\n`);
 
+    // Generate image if card data is defined
+    let imagePath: string | null = null;
+    if (post.image) {
+        imagePath = join(__dirname, '..', 'media', `post-${post.id}.png`);
+        console.log(`🎨 Generating image...`);
+        await generateImage(post.image, imagePath);
+        console.log(`✅ Image generated: ${imagePath}`);
+    }
+
     if (isDryRun) {
         console.log('✅ Dry run complete. No tweet was sent.');
         if (post.reply) {
             console.log(`   (Would have posted reply: "${post.reply.substring(0, 50)}...")`);
+        }
+        if (imagePath) {
+            console.log(`   (Would have attached image: ${imagePath})`);
         }
         return;
     }
@@ -142,7 +146,17 @@ async function main(): Promise<void> {
     // Send tweet
     try {
         const client = createClient();
-        const result = await client.v2.tweet(post.content);
+
+        // Upload image if exists
+        let mediaId: string | undefined;
+        if (imagePath && existsSync(imagePath)) {
+            console.log(`📤 Uploading image...`);
+            mediaId = await client.v1.uploadMedia(imagePath);
+            console.log(`✅ Image uploaded: media_id=${mediaId}`);
+        }
+
+        const tweetOptions = mediaId ? { media: { media_ids: [mediaId] } } : {};
+        const result = await client.v2.tweet(post.content, tweetOptions);
 
         console.log(`✅ Tweet posted successfully!`);
         console.log(`   ID: ${result.data.id}`);
@@ -160,8 +174,8 @@ async function main(): Promise<void> {
             } catch (replyError: unknown) {
                 console.error(`⚠️ Failed to post reply (main tweet succeeded):`, replyError);
             }
-        } else if (!isDryRun) {
-            // Randomly attach a promotional CTA to non-quiz posts (e.g., 30% chance)
+        } else {
+            // Randomly attach a promotional CTA (30% chance)
             const ctaRate = 0.3;
             if (Math.random() < ctaRate) {
                 const ctas = [
@@ -170,20 +184,22 @@ async function main(): Promise<void> {
                     "👇デスク周りの配線地獄から解放してくれたAnkerのマグネットケーブルホルダー。もっと早く買えばよかった⚡️\nhttps://hb.afl.rakuten.co.jp/ichiba/example_cable"
                 ];
                 const randomCta = ctas[Math.floor(Math.random() * ctas.length)];
-
-                console.log(`🎁 Selected for Promotional CTA! Waiting 3 seconds...`);
+                console.log(`🎁 Posting promotional CTA...`);
                 await new Promise(resolve => setTimeout(resolve, 3000));
                 try {
                     const ctaResult = await client.v2.reply(randomCta, result.data.id);
-                    console.log(`✅ Promotional CTA posted successfully!`);
-                    console.log(`   Reply ID: ${ctaResult.data.id}`);
+                    console.log(`✅ Promotional CTA posted: ${ctaResult.data.id}`);
                 } catch (ctaError: unknown) {
-                    console.error(`⚠️ Failed to post Promotional CTA:`, ctaError);
+                    console.error(`⚠️ Failed to post CTA:`, ctaError);
                 }
             }
         }
 
-        // Mark as posted
+        // Clean up temp image
+        if (imagePath && existsSync(imagePath)) {
+            unlinkSync(imagePath);
+        }
+
         markAsPosted(data, post.id);
         savePosts(data);
         console.log(`💾 Post #${post.id} marked as posted.`);
@@ -191,12 +207,10 @@ async function main(): Promise<void> {
         const err = error as { code?: number; data?: { detail?: string; title?: string }; message?: string };
         const detail = err.data?.detail || '';
 
-        // Handle duplicate content - mark as posted and continue
         if (err.code === 403 && detail.includes('duplicate')) {
-            console.log(`⚠️ Post #${post.id} was already posted (duplicate content). Marking as posted.`);
+            console.log(`⚠️ Duplicate content detected. Marking as posted.`);
             markAsPosted(data, post.id);
             savePosts(data);
-            console.log(`💾 Post #${post.id} marked as posted.`);
             return;
         }
 

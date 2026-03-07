@@ -3,258 +3,362 @@
     {
       "id": 101,
       "type": "morning",
-      "content": "【ITパスポート】SLAとSLMの違い\n\n似てるけど全然違うやつ。\n\nA) Agreement (合意) vs Management (管理)\nB) Access (接続) vs Monitor (監視)\n\n正解と覚え方はリプ欄で↓\n#ITパスポート #IT勉強",
-      "reply": "正解は A！\n\n✅ SLA (Service Level Agreement)\n「品質保証の契約書」\n稼働率99.9%などの数値を握ること。\n\n✅ SLM (Service Level Management)\n「SLAを守るための改善活動」\nPDCAサイクルのこと。\n\n契約(A)か、管理(M)かで覚えましょう。",
-      "posted": true,
-      "postedAt": "2026-03-01T23:03:10.514Z"
+      "content": "【朝の1問】ITパスポート頻出\n\nRAIDの種類で「1台壊れても復元できるが、容量が半分になる」のはどれ？\n\nA) RAID 0\nB) RAID 1\nC) RAID 5\nD) RAID 6\n\n正解はリプ欄↓\n#ITパスポート #IT勉強",
+      "reply": "正解は B！RAID 1（ミラーリング）\n\n同じデータを2台に書き込むため容量は半分。\n1台壊れても復元できます。\n\n覚え方：「1=1枚の鏡に映す」\nRAID 0はバラバラ(速い・危険)\nRAID 5は計算で分散(バランス型)",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 ITパスポート 頻出問題",
+        "question": "RAIDの種類で「1台壊れても復元できるが\n容量が半分になる」のはどれ？",
+        "choices": ["RAID 0（ストライピング）", "RAID 1（ミラーリング）", "RAID 5（パリティ分散）", "RAID 6（二重パリティ）"],
+        "tags": "#ITパスポート #IT勉強",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 102,
       "type": "morning",
-      "content": "【共通鍵 vs 公開鍵】\nどっちがどっちか混乱する人向け。\n\n🗝 共通鍵\n・鍵は1つ（家の鍵と同じ）\n・渡すのが大変\n・速い\n\n🗝 公開鍵\n・鍵は2つ（南京錠と鍵）\n・南京錠(公開鍵)をばら撒く\n・遅い\n\n試験では「鍵の管理本数」の計算問題が出ます。\n#基本情報技術者試験",
-      "posted": true,
-      "postedAt": "2026-03-02T23:02:19.248Z"
+      "content": "【朝の1問】基本情報頻出\n\n2進数「1011」を10進数に変換すると？\n\nA) 9\nB) 10\nC) 11\nD) 13\n\n正解はリプ欄↓\n#基本情報技術者試験 #IT勉強",
+      "reply": "正解は C！\n\n1×2³ + 0×2² + 1×2¹ + 1×2⁰\n= 8 + 0 + 2 + 1\n= 11\n\n2進数は右から 1, 2, 4, 8, 16… と桁の重みを掛けて足すだけ。\n試験では16進数変換もセットで覚えよう！",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 基本情報技術者試験 頻出問題",
+        "question": "2進数「1011」を10進数に変換すると？",
+        "choices": ["9", "10", "11", "13"],
+        "tags": "#基本情報技術者試験 #IT勉強",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 103,
       "type": "morning",
-      "content": "おはようございます。今日も朝活。\n\n「継続は力なり」と言うけど、個人的には「継続しか力にならない」が正しい気がしてる。\n\n天才じゃない凡人が勝つには、毎日少しずつ積み上げるしかない。\n今日も淡々とやります。\n#駆け出しエンジニア #朝活",
-      "posted": true,
-      "postedAt": "2026-03-03T23:02:21.373Z"
+      "content": "【朝の1問】ITパスポート頻出\n\nSLAとは何の略？\n\nA) Service Level Agreement\nB) System Log Archive\nC) Software License Authority\nD) Security Layer Access\n\n正解はリプ欄↓\n#ITパスポート #IT勉強",
+      "reply": "正解は A！\n\nSLA = Service Level Agreement（サービスレベル合意書）\n\nサービスの品質基準（稼働率・応答時間など）を\nベンダーと顧客が契約で合意したもの。\n\nSLM（Service Level Management）はSLAを守るための管理活動のこと。A/Mで区別しよう！",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 ITパスポート 頻出問題",
+        "question": "SLAとは何の略？",
+        "choices": ["Service Level Agreement", "System Log Archive", "Software License Authority", "Security Layer Access"],
+        "tags": "#ITパスポート #IT勉強",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 104,
       "type": "morning",
-      "content": "【RAIDの種類】\n試験に出る3つだけ覚えとけばOK。\n\n・RAID 0 (ストライピング)\n速い。1台壊れたら全滅。0=無(データが消える)\n\n・RAID 1 (ミラーリング)\n安全。同じデータを書く。1=棒(鏡の棒)\n\n・RAID 5 (パリティ)\nバランス型。計算して分散。\n\n#ITパスポート",
-      "posted": true,
-      "postedAt": "2026-03-04T23:52:22.232Z"
+      "content": "【朝の1問】基本情報頻出\n\nOSI参照モデルでIPが属するのは何層？\n\nA) 第2層（データリンク層）\nB) 第3層（ネットワーク層）\nC) 第4層（トランスポート層）\nD) 第7層（アプリケーション層）\n\n正解はリプ欄↓\n#基本情報技術者試験 #ネットワーク",
+      "reply": "正解は B！第3層（ネットワーク層）\n\n【各層の代表プロトコル】\nL7 アプリ層：HTTP, SMTP, FTP\nL4 トランスポート層：TCP, UDP\nL3 ネットワーク層：IP, ICMP\nL2 データリンク層：Ethernet, PPP\n\n語呂合わせ「アプセトネデブ」で7→1層を覚えよう！",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 基本情報技術者試験 頻出問題",
+        "question": "OSI参照モデルでIPが属するのは何層？",
+        "choices": ["第2層（データリンク層）", "第3層（ネットワーク層）", "第4層（トランスポート層）", "第7層（アプリケーション層）"],
+        "tags": "#基本情報技術者試験 #ネットワーク",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 105,
       "type": "morning",
-      "content": "【ポート番号クイズ】\n\nWebサイトを見るときに使われるポートは？\n\nA) 22\nB) 53\nC) 80 / 443\nD) 3306\n\n正解はリプ欄↓\n#基本情報技術者試験 #ネットワーク",
-      "reply": "正解は C！\n\n・HTTP = 80\n・HTTPS = 443\n\n他も必須知識です。\n・22 = SSH (リモート操作)\n・53 = DNS (名前解決)\n・3306 = MySQL (DB)\n\nセキュリティグループ設定で「なぜ繋がらない？」の9割はこれ。",
-      "posted": true,
-      "postedAt": "2026-03-06T00:08:13.988Z"
+      "content": "【朝の1問】ITパスポート頻出\n\nDMZ（非武装地帯）の説明として正しいのは？\n\nA) 社内LANと同じ信頼ゾーン\nB) 外部と内部の中間に置くネットワーク領域\nC) VPN専用の暗号化トンネル\nD) ファイアウォール本体のこと\n\n正解はリプ欄↓\n#ITパスポート #情報セキュリティ",
+      "reply": "正解は B！\n\nDMZ = 外部(インターネット)と内部(社内LAN)の間に置く\n「中間ゾーン」のこと。\n\nWebサーバやメールサーバをDMZに置くことで、\n外部からアクセスを受けつつ、社内LANを守れる。",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 ITパスポート 頻出問題",
+        "question": "DMZ（非武装地帯）の説明として正しいのは？",
+        "choices": ["社内LANと同じ信頼ゾーン", "外部と内部の中間に置くネットワーク領域", "VPN専用の暗号化トンネル", "ファイアウォール本体のこと"],
+        "tags": "#ITパスポート #情報セキュリティ",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 106,
       "type": "morning",
-      "content": "仕事開始。\n\nメールチェックの前に「今日絶対終わらせるタスク」を1つだけ決める。\nこれやらないと、メール返信だけで午前中が終わるから。\n\nエンジニアの敵はバグじゃなくて「割り込みタスク」だと思う。\n#仕事術",
-      "posted": true,
-      "postedAt": "2026-03-06T23:49:23.193Z"
-    },
-    {
-      "id": 107,
-      "type": "morning",
-      "content": "【プロトコルの覚え方：OSI参照モデル】\n\nレイヤ7 (アプリ): HTTP, SMTP, FTP\nレイヤ4 (トランスポート): TCP, UDP\nレイヤ3 (ネット): IP, ICMP\n\n「アプセトネデブ」って語呂合わせで覚えたけど、実務だと「これL4の問題？L7の問題？」って会話が普通に出る。\n暗記じゃなくてイメージ大事。\n#基本情報技術者試験",
-      "posted": false,
-      "postedAt": "2026-02-24T23:59:45.196Z"
-    },
-    {
-      "id": 108,
-      "type": "morning",
-      "content": "朝のコードリーディング。\n\n他人のコードを読むのは「無料の技術書」を読むのと同じ。\n「なんでこう書いたんだろ？」って考えると自分の引き出しが増える。\n\nなお、「なんでこんなクソコード書いたんだ」と思うこともある模様。\n#エンジニアの日常",
-      "posted": false,
-      "postedAt": "2026-02-25T23:51:36.168Z"
+      "content": "【朝の1問】基本情報頻出\n\nXOR（排他的論理和）で「1 XOR 1」の結果は？\n\nA) 0\nB) 1\nC) 2\nD) エラー\n\n正解はリプ欄↓\n#基本情報技術者試験 #論理回路",
+      "reply": "正解は A！\n\nXOR真理値表\n0 XOR 0 = 0\n0 XOR 1 = 1\n1 XOR 0 = 1\n1 XOR 1 = 0\n\n「2つが違うとき1」が定義。暗号化やパリティチェックで重要！",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 基本情報技術者試験 頻出問題",
+        "question": "XOR（排他的論理和）で「1 XOR 1」の結果は？",
+        "choices": ["0", "1", "2", "エラー"],
+        "tags": "#基本情報技術者試験 #論理回路",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 201,
       "type": "lunch",
-      "content": "【Excel脱マウス計画】\n\n・今日の日付 → Ctrl + ;\n・今の時刻 → Ctrl + :\n\n議事録や作業ログ取るときに、手入力してる時間もったいないです。\n一瞬で入る快感を味わってください。\n#業務効率化 #Excel",
-      "posted": true,
-      "postedAt": "2026-03-07T04:54:48.077Z"
+      "content": "【図解】共通鍵 vs 公開鍵暗号\n\n🗝 共通鍵暗号\n・鍵は1種類（家の鍵と同じ）\n・速い、でも鍵の受渡しが課題\n・例：AES\n\n🔐 公開鍵暗号\n・公開鍵＋秘密鍵の2種類\n・安全に配布できる、でも遅い\n・例：RSA\n\nn人で共通鍵を使うと n(n-1)/2 本必要。10人なら45本！\n#基本情報技術者試験 #情報セキュリティ",
+      "image": {
+        "cardType": "tips",
+        "badge": "💡 基本情報技術者試験 解説",
+        "title": "共通鍵 vs 公開鍵暗号\n違いを整理しよう",
+        "boxes": [
+          {
+            "title": "🗝 共通鍵暗号",
+            "items": ["鍵は1種類", "処理が速い", "鍵の受渡しが課題", "例：AES"]
+          },
+          {
+            "title": "🔐 公開鍵暗号",
+            "items": ["公開鍵＋秘密鍵", "処理が遅い", "安全に鍵を配布", "例：RSA"]
+          }
+        ],
+        "memo": "💬 n人で共通鍵 → n(n-1)/2 本必要。10人なら45本！だから公開鍵が使われる。",
+        "tags": "#基本情報技術者試験 #情報セキュリティ"
+      },
+      "posted": false
     },
     {
       "id": 202,
       "type": "lunch",
-      "content": "【Windows 神ショートカット】\n\nWin + V\n\nこれ使ってない人、人生損してます。\n「クリップボード履歴」です。\n\nさっきコピーしたやつ、その前にコピーしたやつ、全部履歴から選んでペーストできます。\n設定でONにするだけ。今すぐやってみて。\n#ショートカットキー",
+      "content": "【図解】RAID 0 / 1 / 5 の違い\n\n💾 RAID 0（ストライピング）\n速い・冗長性なし・1台壊れたら全滅\n\n💾 RAID 1（ミラーリング）\n安全・容量半分・完全コピー\n\n💾 RAID 5（パリティ）\nバランス型・1台故障まで耐性・3台以上必要\n\n#ITパスポート #基本情報技術者試験",
+      "image": {
+        "cardType": "tips",
+        "badge": "💡 ITパスポート／基本情報 解説",
+        "title": "RAID 0 / 1 / 5 の違い\nこの3つを覚えれば完璧",
+        "boxes": [
+          {
+            "title": "RAID 0（ストライピング）",
+            "items": ["速度最優先", "冗長性なし", "1台壊れたら全滅"]
+          },
+          {
+            "title": "RAID 1（ミラーリング）",
+            "items": ["完全コピー", "容量は半分", "1台故障でも安全"]
+          }
+        ],
+        "memo": "💬 RAID 5はパリティで分散。3台以上必要で1台故障まで耐性あり。バランス型。",
+        "tags": "#ITパスポート #基本情報技術者試験"
+      },
       "posted": false
     },
     {
       "id": 203,
       "type": "lunch",
-      "content": "【パスワードの作り方】\n「意味のある単語」や「短い文字列」は瞬殺されます。\n\n推奨は「パスフレーズ」。\n\nBlue_Coffee_Desk_99!\n\nみたいに、ランダムな単語を繋げる。\n覚えやすいのに、総当たり攻撃にはめちゃくちゃ強い。\n#情報セキュリティ",
+      "content": "【覚え方】ポート番号 完全まとめ\n\n試験に出るポート番号はこれだけ！\n\n20/21 → FTP\n22 → SSH\n25 → SMTP\n53 → DNS\n80 → HTTP\n110 → POP3\n443 → HTTPS\n\n#基本情報技術者試験 #ネットワーク",
+      "image": {
+        "cardType": "summary",
+        "badge": "📋 基本情報技術者試験 まとめ",
+        "title": "試験に出るポート番号\n7つ覚えれば完璧！",
+        "items": [
+          { "strong": "20/21", "text": "FTP（ファイル転送）" },
+          { "strong": "22", "text": "SSH（リモート操作）" },
+          { "strong": "25", "text": "SMTP（メール送信）" },
+          { "strong": "53", "text": "DNS（名前解決）" },
+          { "strong": "80 / 443", "text": "HTTP / HTTPS" },
+          { "strong": "110", "text": "POP3（メール受信）" }
+        ],
+        "tags": "#基本情報技術者試験 #ネットワーク",
+        "hint": "#IT勉強"
+      },
       "posted": false
     },
     {
       "id": 204,
       "type": "lunch",
-      "content": "ランチ中に休憩できてる？\n\nポモドーロ・テクニック（25分集中+5分休憩）。\nこれの本当の価値は「強制的に休む」ことにあると思う。\n\nエンジニアは過集中しがち。\n脳がバテる前に休まないと、15時以降の生産性が死にます。\n#仕事術",
+      "content": "【覚え方】情報セキュリティの3要素 CIA\n\n🔒 機密性（Confidentiality）\n許可された人だけがアクセスできる\n\n✅ 完全性（Integrity）\n情報が改ざんされていない\n\n⚡ 可用性（Availability）\n必要な時に使える状態\n\nITパスポートでは定義を問う問題が頻出！\n#ITパスポート #情報セキュリティ",
+      "image": {
+        "cardType": "summary",
+        "badge": "📋 ITパスポート まとめ",
+        "title": "情報セキュリティのCIA\n3要素を完全理解",
+        "items": [
+          { "strong": "機密性（C）", "text": "許可された人だけがアクセスできる" },
+          { "strong": "完全性（I）", "text": "情報が正確で改ざんされていない状態" },
+          { "strong": "可用性（A）", "text": "必要な時にいつでも利用できる状態" }
+        ],
+        "tags": "#ITパスポート #情報セキュリティ",
+        "hint": "#IT勉強"
+      },
       "posted": false
     },
     {
       "id": 205,
       "type": "lunch",
-      "content": "【Chrome爆速ショートカット】\n\nCtrl + T：新しいタブ\nCtrl + W：タブを閉じる\nCtrl + Shift + T：閉じたタブ復活（神機能）\nCtrl + L：アドレスバー選択\n\n調査・ググり業務の効率が劇的に変わります。\nマウス触らない縛りで1時間仕事してみると面白いよ。\n#駆け出しエンジニア",
+      "content": "【図解】TCP vs UDP の違い\n\n📦 TCP\n・接続確立してから送信\n・再送あり・順序保証あり\n・HTTP, SMTP, FTP\n\n💨 UDP\n・接続なしでいきなり送信\n・速い、でも信頼性なし\n・動画ストリーミング、DNS\n\n「確実に届けたいならTCP、速さ優先ならUDP」\n#基本情報技術者試験 #ネットワーク",
+      "image": {
+        "cardType": "tips",
+        "badge": "💡 基本情報技術者試験 解説",
+        "title": "TCP vs UDP\n使い分けを理解しよう",
+        "boxes": [
+          {
+            "title": "📦 TCP",
+            "items": ["接続確立が必要", "再送・順序保証あり", "信頼性が高い", "HTTP, SMTP, FTP"]
+          },
+          {
+            "title": "💨 UDP",
+            "items": ["接続不要", "再送なし・高速", "リアルタイム向き", "DNS, 動画配信"]
+          }
+        ],
+        "memo": "💬 確実に届けたいならTCP、速さ優先ならUDP と覚えよう！",
+        "tags": "#基本情報技術者試験 #ネットワーク"
+      },
       "posted": false
-    },
-    {
-      "id": 206,
-      "type": "lunch",
-      "content": "お昼。\nコンビニの「完全栄養食」的なパン。\nエンジニアの栄養バランス、サプリで保たれがち。\n\n脳に糖分回さないと午後戦えないので、炭水化物解禁します。\n#エンジニアの昼食",
-      "posted": false
-    },
-    {
-      "id": 207,
-      "type": "lunch",
-      "content": "【Slackショートカット】\n\nCtrl + K：チャンネル移動（これ最強）\nCtrl + Enter：送信\nUp Arrow：直前のメッセージ編集\n\nマウスでチャンネル探してる時間、累計したら結構な損失な気がする。\n#Slack #業務効率化",
-      "posted": false
-    },
-    {
-      "id": 250,
-      "type": "afternoon",
-      "content": "AWSの「Route 53」の53は、DNSのポート番号から来てる。\nおしゃれなネーミング。\n\nちなみにS3は「Simple Storage Service」でSが3つ。\nEC2は「Elastic Compute Cloud」でCが2つ。\n\nAWSの命名、ダジャレっぽくて好き。\n#AWS",
-      "posted": true,
-      "postedAt": "2026-03-02T05:22:43.384Z"
-    },
-    {
-      "id": 251,
-      "type": "afternoon",
-      "content": "眠くなってくる時間。\n\nカフェイン錠剤か、ブラックコーヒーか。\nエンジニアの必須スキルは「カフェイン耐性」かもしれない。\n\nとりあえず15分だけ仮眠（パワーナップ）とる。\nこれが一番効く。\n#エンジニアあるある",
-      "posted": true,
-      "postedAt": "2026-03-02T06:08:42.941Z"
-    },
-    {
-      "id": 252,
-      "type": "afternoon",
-      "content": "【VS Code便利機能】\n\nCtrl + D：同じ単語を選択（連打すると複数選択）\n\n変数名の一括変更や、JSONの整形にめちゃくちゃ便利。\nこれ知らないと置換機能使っちゃうけど、Ctrl+Dの方が直感的で速い。\n#VSCode #プログラミング",
-      "posted": true,
-      "postedAt": "2026-03-03T05:23:28.461Z"
-    },
-    {
-      "id": 253,
-      "type": "afternoon",
-      "content": "設計書書いてる。\n\n「なんとなく」で作ると後で地獄を見る。\nコード書く時間より設計考える時間の方が長い方が、結果的に早く終わる。\n\nと、バグ修正で泣きを見た過去の自分に言いたい。\n#システム開発",
-      "posted": true,
-      "postedAt": "2026-03-03T05:43:28.046Z"
-    },
-    {
-      "id": 254,
-      "type": "afternoon",
-      "content": "【変数の命名規則】\n\ncamelCase：先頭小文字、単語区切り大文字 (Java, JS)\nSnake_Case：アンダースコア区切り (Python, DB)\nPascalCase：先頭大文字 (Class名)\n\nkebab-case：ハイフン区切り (URL, CSS)\n\n現場のルールに従うのが正解だけど、統一されてないコード見ると発狂しそうになる。\n#プログラミング",
-      "posted": true,
-      "postedAt": "2026-03-04T05:15:22.985Z"
     },
     {
       "id": 301,
-      "type": "evening",
-      "content": "【SQL事故防止策】\nDELETE や UPDATE を実行する前に。\n\n必ず、同じ条件で SELECT を実行して「対象件数」と「中身」を確認する。\n\nいきなりDELETE流して「0件」ならいいけど、「10000件」って出たら心臓止まるから。\n確認は大事。\n#SQL #データベース",
-      "posted": true,
-      "postedAt": "2026-03-02T08:03:44.022Z"
+      "type": "afternoon",
+      "content": "【図解】OSI参照モデル 7層まとめ\n\n7 アプリケーション層：HTTP, SMTP, FTP\n6 プレゼンテーション層：文字コード・暗号化\n5 セッション層：通信の開始・終了\n4 トランスポート層：TCP, UDP\n3 ネットワーク層：IP, ICMP\n2 データリンク層：Ethernet\n1 物理層：ケーブル・ビット\n\n語呂合わせ「アプセトネデブ」で覚えよう！\n#基本情報技術者試験 #ネットワーク",
+      "image": {
+        "cardType": "summary",
+        "badge": "📋 基本情報技術者試験 まとめ",
+        "title": "OSI参照モデル 7層\n語呂：アプセトネデブ",
+        "items": [
+          { "strong": "L7 アプリ層", "text": "HTTP, SMTP, FTP, DNS" },
+          { "strong": "L6 プレゼン層", "text": "文字コード・暗号化" },
+          { "strong": "L5 セッション層", "text": "通信の開始・終了管理" },
+          { "strong": "L4 トランスポート層", "text": "TCP, UDP" },
+          { "strong": "L3 ネットワーク層", "text": "IP, ICMP（ルータ）" },
+          { "strong": "L2 データリンク層", "text": "Ethernet（スイッチ）" }
+        ],
+        "tags": "#基本情報技術者試験 #ネットワーク",
+        "hint": "語呂：アプセトネデブ"
+      },
+      "posted": false
     },
     {
       "id": 302,
-      "type": "evening",
-      "content": "Gitでやらかした時の呪文まとめ。\n\n・直前のコミット取り消し\ngit reset --soft HEAD^\n\n・コミットメッセージ修正\ngit commit --amend\n\n・作業を一時退避\ngit stash\n\nこれだけ覚えとけば、軽傷は治せます。\n重傷（push後）は…先輩に相談しましょう。\n#Git",
-      "posted": true,
-      "postedAt": "2026-03-03T08:01:07.655Z"
+      "type": "afternoon",
+      "content": "【図解】データベース正規化 3ステップ\n\nデータの重複をなくす「正規化」\n\n第1正規形：繰り返し項目をなくす\n第2正規形：部分関数従属をなくす\n第3正規形：推移的関数従属をなくす\n\n試験では「どの正規形か答えよ」系が頻出！\n#基本情報技術者試験 #データベース",
+      "image": {
+        "cardType": "summary",
+        "badge": "📋 基本情報技術者試験 まとめ",
+        "title": "データベース正規化\n3ステップで完全理解",
+        "items": [
+          { "strong": "第1正規形", "text": "繰り返し項目（配列）をなくす" },
+          { "strong": "第2正規形", "text": "部分関数従属をなくす" },
+          { "strong": "第3正規形", "text": "推移的関数従属をなくす" }
+        ],
+        "tags": "#基本情報技術者試験 #データベース",
+        "hint": "#IT勉強"
+      },
+      "posted": false
     },
     {
       "id": 303,
-      "type": "evening",
-      "content": "エラーが出た時の対処法で、新人エンジニアの伸びが決まる気がする。\n\n× すぐ人に聞く\n△ 日本語訳してなんとなく直す\n◎ エラー文をそのままググって、原因を特定してから直す\n\n「動けばヨシ」じゃなくて「なぜ動かなかったか」を理解しないと、また同じエラーでハマる。\n#プログラミング初心者",
-      "posted": true,
-      "postedAt": "2026-03-05T08:00:53.654Z"
-    },
-    {
-      "id": 304,
-      "type": "evening",
-      "content": "【Markdownの書き方】\n議事録が汚いと言われたら、Markdownを覚えよう。\n\n# 見出し\n- 箇条書き\n**強調**\n[リンク](URL)\n\nこれだけで十分。\nWordで装飾するより10倍速いし、エンジニアっぽくて見やすい。\n#ドキュメント作成",
-      "posted": true,
-      "postedAt": "2026-03-07T09:54:07.823Z"
-    },
-    {
-      "id": 305,
-      "type": "evening",
-      "content": "退勤。\n今日はバグ調査で一日終わった。\n\n原因は「全角スペース」。\n\nIDEの設定で「空白文字を表示する」にしてなかった自分の責任だけど、全角スペースはこの世から滅びてほしい。\nお疲れ様でした。\n#エンジニアあるある",
-      "posted": false,
-      "postedAt": "2026-02-23T08:07:19.802Z"
-    },
-    {
-      "id": 306,
-      "type": "evening",
-      "content": "定時退社チャレンジ失敗。\n\n夕会で「あ、これ追加で」って言われるの、もはや様式美。\n\nでも今日はAWSの学習時間が欲しかったから、潔く切り上げて帰る。\n明日の自分、頑張れ。\n#SIerあるある",
-      "posted": false,
-      "postedAt": "2026-02-24T08:10:09.632Z"
-    },
-    {
-      "id": 307,
-      "type": "evening",
-      "content": "【Linuxコマンド：ls】\n\nls -l ：詳細表示\nls -a ：隠しファイル表示\nls -h ：サイズを人間に読みやすく(KB, MB)\n\n`ls -lah` は手癖になってる。\n#Linux #LPIC",
-      "posted": false,
-      "postedAt": "2026-02-25T08:08:56.711Z"
-    },
-    {
-      "id": 308,
-      "type": "evening",
-      "content": "コードレビューで「これなんでここにあるの？」って聞かれて答えられない時が一番恥ずかしい。\n\nコピペしましたとは言えない空気。\n\n「動くコード」より「説明できるコード」を書こうと誓った日。\n#駆け出しエンジニア",
-      "posted": false,
-      "postedAt": "2026-02-26T08:07:28.917Z"
+      "type": "afternoon",
+      "content": "【図解】主な攻撃手法まとめ\n\n🎣 フィッシング：偽サイトに誘導\n💉 SQLインジェクション：DBを不正操作\n🔀 XSS：悪意あるスクリプト埋め込み\n📧 標的型攻撃：特定組織を狙うメール\n🔓 ブルートフォース：総当たりでパスワード解読\n\n#ITパスポート #情報セキュリティ",
+      "image": {
+        "cardType": "summary",
+        "badge": "📋 ITパスポート まとめ",
+        "title": "知っておくべき攻撃手法\nTop 5",
+        "items": [
+          { "strong": "フィッシング", "text": "偽サイトに誘導して情報を盗む" },
+          { "strong": "SQLインジェクション", "text": "DBを不正操作する攻撃" },
+          { "strong": "XSS", "text": "悪意あるスクリプトを埋め込む" },
+          { "strong": "標的型攻撃", "text": "特定組織を狙うメール攻撃" },
+          { "strong": "ブルートフォース", "text": "総当たりでパスワードを解読" }
+        ],
+        "tags": "#ITパスポート #情報セキュリティ",
+        "hint": "#IT勉強"
+      },
+      "posted": false
     },
     {
       "id": 401,
-      "type": "night",
-      "content": "【AWS ネットワーク構成図の5要素】\n\n1. VPC (仮想ネットワーク)\n2. Subnet (ネットワークの区画)\n3. Route Table (通信の宛先制御)\n4. Internet Gateway (インターネット接続)\n5. Security Group (ファイアウォール)\n\nまずはこの5つの関係性を図で書けるようになるのが第一歩。\n\n関係性のイメージはリプ欄へ↓\n#AWS #駆け出しエンジニア",
-      "reply": "【イメージ図】\n\nVPC = 土地\nSubnet = 部屋\nRoute Table = 地図・看板\nIGW = 玄関\nSG = 部屋の前のガードマン\n\n「地図(RT)がないと玄関(IGW)に行けない」\n「ガードマン(SG)が通してくれないと入れない」\n\n擬人化するとトラブルシューティングが早くなります。",
-      "posted": true,
-      "postedAt": "2026-03-01T11:44:18.279Z"
+      "type": "evening",
+      "content": "【夜の1問】ITパスポート頻出\n\nPDCAサイクルの正しい順番は？\n\nA) Plan → Do → Check → Act\nB) Do → Plan → Check → Act\nC) Plan → Check → Do → Act\nD) Check → Plan → Do → Act\n\n正解はリプ欄↓\n#ITパスポート #IT勉強",
+      "reply": "正解は A！\n\nPDCA = Plan（計画）→ Do（実行）→ Check（評価）→ Act（改善）\n\n継続的に品質を改善するためのサイクル。\nITILのサービス管理やプロジェクト管理でも頻出！",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 ITパスポート 頻出問題",
+        "question": "PDCAサイクルの正しい順番は？",
+        "choices": ["Plan → Do → Check → Act", "Do → Plan → Check → Act", "Plan → Check → Do → Act", "Check → Plan → Do → Act"],
+        "tags": "#ITパスポート #IT勉強",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 402,
-      "type": "night",
-      "content": "【PMP】ステークホルダーの分類\n\nプロジェクトに関わる人は4タイプに分けて対応を変える。\n\n1. 影響度大・関心度大 → 重点管理 (最重要人物)\n2. 影響度大・関心度小 → 満足維持\n3. 影響度小・関心度大 → 情報提供\n4. 影響度小・関心度小 → 監視\n\n「声の大きい人」より「影響力の大きい人」を見極めるのがPMの仕事。\n#PMP #プロジェクトマネジメント",
-      "posted": true,
-      "postedAt": "2026-03-01T14:05:11.899Z"
+      "type": "evening",
+      "content": "【夜の1問】基本情報頻出\n\nCPUのクロック周波数が2GHzで、1命令あたり平均2クロック必要な場合、1秒間に実行できる命令数は？\n\nA) 5億回\nB) 10億回\nC) 20億回\nD) 40億回\n\n正解はリプ欄↓\n#基本情報技術者試験 #コンピュータ",
+      "reply": "正解は B！10億回\n\n2GHz = 2,000,000,000 クロック/秒\n1命令 = 2クロック\n2,000,000,000 ÷ 2 = 1,000,000,000（10億）回/秒",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 基本情報技術者試験 頻出問題",
+        "question": "2GHz・1命令2クロックのCPUが\n1秒間に実行できる命令数は？",
+        "choices": ["5億回", "10億回", "20億回", "40億回"],
+        "tags": "#基本情報技術者試験 #コンピュータ",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
       "id": 403,
-      "type": "night",
-      "content": "【Java Silver】オーバーライドの注意点\n\n親クラスのメソッドを上書きするとき。\n\n× アクセス修飾子を厳しくする\n(public → protected はNG)\n\n◎ アクセス修飾子を緩くする\n(protected → public はOK)\n\n親ができることは子もできなきゃいけないから。\nここ、試験でよく出ます。\n#Java #プログラミング",
-      "posted": true,
-      "postedAt": "2026-03-02T11:12:21.934Z"
+      "type": "evening",
+      "content": "【夜の1問】ITパスポート頻出\n\n著作権法で「プログラムの著作物」について正しいのは？\n\nA) アイデア自体も保護される\nB) 表現（コード）のみ保護される\nC) 公開した時点で失効する\nD) 会社が作ると保護されない\n\n正解はリプ欄↓\n#ITパスポート #法律",
+      "reply": "正解は B！\n\n著作権法はアイデアではなく「表現」を保護します。\n\n例）「ソートアルゴリズムのアイデア」は保護されない。\n　　「そのアルゴリズムを実装したコード」は保護される。",
+      "image": {
+        "cardType": "quiz",
+        "badge": "📝 ITパスポート 頻出問題",
+        "question": "著作権法で「プログラムの著作物」について正しいのは？",
+        "choices": ["アイデア自体も保護される", "表現（コード）のみ保護される", "公開した時点で失効する", "会社が作ると保護されない"],
+        "tags": "#ITパスポート #法律",
+        "hint": "正解はリプ欄 ↓"
+      },
+      "posted": false
     },
     {
-      "id": 404,
+      "id": 501,
       "type": "night",
-      "content": "【CCNA】IPアドレスのクラス\n\nクラスA: 1.0.0.0 ~\nクラスB: 128.0.0.0 ~\nクラスC: 192.0.0.0 ~\n\nあれ、127 は？\n\n127.x.x.x は「ループバックアドレス（自分自身）」。\n`ping 127.0.0.1` は「自分にPing打つ」こと。\nNICが壊れてないかの確認に使います。\n#CCNA #ネットワーク",
-      "posted": true,
-      "postedAt": "2026-03-02T11:59:54.291Z"
+      "content": "【今夜の総まとめ】情報セキュリティ3要素 CIA\n\n🔒 機密性（Confidentiality）\n許可された人だけがアクセスできる状態\n\n✅ 完全性（Integrity）\n情報が正確で改ざんされていない状態\n\n⚡ 可用性（Availability）\n必要な時にいつでも利用できる状態\n\nITパスポート・基本情報どちらにも必出！\n#ITパスポート #基本情報技術者試験",
+      "image": {
+        "cardType": "summary",
+        "badge": "🌙 今夜の総まとめ",
+        "title": "情報セキュリティのCIA\n3要素を完全マスター",
+        "items": [
+          { "strong": "機密性（C）", "text": "許可された人だけがアクセスできる" },
+          { "strong": "完全性（I）", "text": "情報が正確で改ざんされていない" },
+          { "strong": "可用性（A）", "text": "必要な時にいつでも利用できる" }
+        ],
+        "tags": "#ITパスポート #基本情報技術者試験",
+        "hint": "#IT勉強"
+      },
+      "posted": false
     },
     {
-      "id": 405,
+      "id": 502,
       "type": "night",
-      "content": "【LPIC】権限 (chmod) の数値\n\nRead(r) = 4\nWrite(w) = 2\nExecute(x) = 1\n\n全部盛り = 7 (4+2+1)\n読み書き = 6 (4+2)\n読み実行 = 5 (4+1)\n\n`chmod 755` とかよく見るやつ。\n所有者は全部(7)、他は読み実行(5,5)。\n足し算で覚えよう。\n#LPIC #Linux",
-      "posted": true,
-      "postedAt": "2026-03-02T15:32:21.621Z"
+      "content": "【今夜の総まとめ】試験に出るSQL基本構文\n\nSELECT 列名 FROM テーブル名\nWHERE 条件\nGROUP BY グループ化\nHAVING グループの条件\nORDER BY 並び順\n\n実行順序：FROM→WHERE→GROUP BY→HAVING→SELECT→ORDER BY\nこの順番が試験で問われます！\n#基本情報技術者試験 #データベース",
+      "image": {
+        "cardType": "summary",
+        "badge": "🌙 今夜の総まとめ",
+        "title": "SQL基本構文\n実行順序を覚えよう",
+        "items": [
+          { "strong": "①FROM", "text": "どのテーブルから取得するか" },
+          { "strong": "②WHERE", "text": "行を絞り込む条件" },
+          { "strong": "③GROUP BY", "text": "グループ化" },
+          { "strong": "④HAVING", "text": "グループの絞り込み条件" },
+          { "strong": "⑤SELECT", "text": "取得する列を指定" },
+          { "strong": "⑥ORDER BY", "text": "並び替え" }
+        ],
+        "tags": "#基本情報技術者試験 #データベース",
+        "hint": "#IT勉強"
+      },
+      "posted": false
     },
     {
-      "id": 406,
+      "id": 503,
       "type": "night",
-      "content": "【基本情報】論理回路（AND, OR, XOR）\n\nAND (論理積)：両方1なら1\nOR (論理和)：どっちか1なら1\nXOR (排他的論理和)：違うなら1\n\n特にXORは「暗号化」や「パリティチェック」で使われる。\n「違うやつが好き」って覚えると忘れない。\n#基本情報技術者試験",
-      "posted": true,
-      "postedAt": "2026-03-03T11:10:07.736Z"
-    },
-    {
-      "id": 407,
-      "type": "night",
-      "content": "夜はAWSのハンズオン。\n\nCloudFormationでインフラ構築。\nGUIでポチポチ作るのもいいけど、コードで管理できる安心感すごい。\n\n「インフラもコード」 (IaC)。\nこれからのエンジニアの必修科目な気がする。\nエラーでスタックロールバックした時の絶望感も含めて勉強。\n#AWS #IaC",
-      "posted": true,
-      "postedAt": "2026-03-03T12:01:30.784Z"
-    },
-    {
-      "id": 408,
-      "type": "night",
-      "content": "【PMP】WBS (Work Breakdown Structure)\n\n作業を分解構造図にすること。\nポイントは「成果物」ベースで分解すること。\n\n「何をするか」じゃなくて「何を作るか」。\n\n一番下は「ワークパッケージ」と呼ぶ。\n8/80ルール（8時間以上80時間以内）が目安。\n#PMP",
-      "posted": true,
-      "postedAt": "2026-03-03T16:08:10.808Z"
-    },
-    {
-      "id": 409,
-      "type": "night",
-      "content": "【Java】InterfaceとAbstract Classの違い\n\nInterface：\n・多重継承できる (implements A, B)\n・定数と抽象メソッドだけ (Java8以降はdefaultメソッドも)\n\nAbstract Class：\n・単一継承のみ (extends A)\n・普通のメソッドも持てる\n\n「機能の約束」か「共通処理の親」か。\n使い分け難しいけど大事。\n#Java",
-      "posted": true,
-      "postedAt": "2026-03-04T11:04:00.547Z"
+      "content": "【今夜の総まとめ】開発手法の種類と特徴\n\n📋 ウォーターフォール\n工程を順番に進める。要件変更に弱い。\n\n🔄 アジャイル（スクラム）\n短いサイクルで繰り返す。変化に強い。\n\n🌀 スパイラル\nリスク分析を繰り返しながら開発。\n\n🔧 プロトタイプ\n試作品で確認しながら進める。\n\n#ITパスポート #基本情報技術者試験",
+      "image": {
+        "cardType": "summary",
+        "badge": "🌙 今夜の総まとめ",
+        "title": "ソフトウェア開発手法\n4つの違いを整理",
+        "items": [
+          { "strong": "ウォーターフォール", "text": "順番に進める。要件変更に弱い" },
+          { "strong": "アジャイル", "text": "短いサイクルで繰り返す。変化に強い" },
+          { "strong": "スパイラル", "text": "リスク分析しながら繰り返す" },
+          { "strong": "プロトタイプ", "text": "試作品で確認しながら進める" }
+        ],
+        "tags": "#ITパスポート #基本情報技術者試験",
+        "hint": "#IT勉強"
+      },
+      "posted": false
     }
   ]
 }
